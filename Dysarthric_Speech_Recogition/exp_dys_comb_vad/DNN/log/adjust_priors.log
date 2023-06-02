@@ -1,0 +1,9 @@
+# nnet-adjust-priors exp_dys_comb_vad/DNN/final.mdl exp_dys_comb_vad/DNN/post.vec exp_dys_comb_vad/DNN/final.mdl 
+# Started at Fri Mar 17 04:05:29 IST 2023
+#
+nnet-adjust-priors exp_dys_comb_vad/DNN/final.mdl exp_dys_comb_vad/DNN/post.vec exp_dys_comb_vad/DNN/final.mdl 
+LOG (nnet-adjust-priors[5.5]:PrintPriorDiagnostics():nnet-adjust-priors.cc:58) Adjusting priors: largest absolute difference was for pdf 45, 0.0757067 -> 0.0717392
+LOG (nnet-adjust-priors[5.5]:PrintPriorDiagnostics():nnet-adjust-priors.cc:61) Adjusting priors: K-L divergence from old to new is 0.00871643
+LOG (nnet-adjust-priors[5.5]:main():nnet-adjust-priors.cc:137) Modified priors of neural network model and wrote it to exp_dys_comb_vad/DNN/final.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 04:05:29 IST 2023, elapsed time 0 seconds

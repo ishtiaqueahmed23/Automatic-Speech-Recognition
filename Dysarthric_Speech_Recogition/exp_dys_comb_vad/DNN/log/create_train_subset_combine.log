@@ -1,0 +1,7 @@
+# nnet-subset-egs --n=10000 ark:exp_dys_comb_vad/DNN/egs/train_subset_all.egs ark:exp_dys_comb_vad/DNN/egs/train_combine.egs 
+# Started at Fri Mar 17 00:20:09 IST 2023
+#
+nnet-subset-egs --n=10000 ark:exp_dys_comb_vad/DNN/egs/train_subset_all.egs ark:exp_dys_comb_vad/DNN/egs/train_combine.egs 
+LOG (nnet-subset-egs[5.5]:main():nnet-subset-egs.cc:93) Selected a subset of 10000 out of 41504 neural-network training examples 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 00:20:09 IST 2023, elapsed time 0 seconds

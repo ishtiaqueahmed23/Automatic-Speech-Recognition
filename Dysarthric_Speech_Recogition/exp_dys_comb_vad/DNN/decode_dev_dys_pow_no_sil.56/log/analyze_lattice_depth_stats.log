@@ -1,0 +1,42 @@
+# gunzip -c exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/ali_frame_tmp.gz 
+# Started at Tue Mar  7 18:55:26 IST 2023
+#
+The total amount of data analyzed assuming 100 frames per second is 4.5 hours
+Overall, lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.3
+Phone SIL accounts for 55.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.5
+Nonsilence phones as a group account for 44.4% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.0
+Phone ax_I accounts for 2.8% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.2
+Phone t_E accounts for 1.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.9
+Phone eh_I accounts for 1.5% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.4
+Phone ax_E accounts for 1.4% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.8
+Phone n_E accounts for 1.1% of frames, with lattice depth (10,50,90-percentile)=(1,2,5) and mean=2.5
+Phone d_E accounts for 1.1% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=2.0
+Phone w_B accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.3
+Phone iy_E accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.7
+Phone ay_I accounts for 1.0% of frames, with lattice depth (10,50,90-percentile)=(1,2,5) and mean=2.4
+Phone ae_I accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.2
+Phone ax_B accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.1
+Phone l_I accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.7
+Phone ow_E accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.8
+Phone l_E accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.8
+Phone n_I accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.0
+Phone iy_I accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.8
+Phone b_B accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.3
+Phone aa_I accounts for 0.8% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.9
+Phone r_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.8
+Phone ao_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.2
+Phone z_E accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=2.0
+Phone r_E accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(1,2,4) and mean=2.2
+Phone s_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.5
+Phone m_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=2.0
+Phone ih_I accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.1
+Phone k_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,4) and mean=1.9
+Phone uw_E accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,2,3) and mean=2.0
+Phone hh_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,2,6) and mean=2.9
+Phone s_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,2) and mean=1.5
+Phone ae_B accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,2,4) and mean=2.2
+Phone ah_I accounts for 0.6% of frames, with lattice depth (10,50,90-percentile)=(1,1,6) and mean=2.6
+Phone dh_B accounts for 0.5% of frames, with lattice depth (10,50,90-percentile)=(1,2,5) and mean=2.7
+Phone t_I accounts for 0.5% of frames, with lattice depth (10,50,90-percentile)=(1,1,3) and mean=1.7
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Mar  7 18:55:27 IST 2023, elapsed time 1 seconds

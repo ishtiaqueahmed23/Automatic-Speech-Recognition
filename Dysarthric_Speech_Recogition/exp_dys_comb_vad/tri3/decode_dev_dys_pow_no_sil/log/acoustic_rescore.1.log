@@ -1,0 +1,19 @@
+# gmm-rescore-lattice exp_dys_comb_vad/tri3/final.mdl "ark:gunzip -c exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.tmp.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans.1 ark:- ark:- |" ark:- | lattice-determinize-pruned --acoustic-scale=0.083333 --beam=6.0 ark:- "ark:|gzip -c > exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.1.gz" && rm exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.tmp.1.gz 
+# Started at Fri Mar 17 00:19:45 IST 2023
+#
+gmm-rescore-lattice exp_dys_comb_vad/tri3/final.mdl 'ark:gunzip -c exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.tmp.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans.1 ark:- ark:- |' ark:- 
+lattice-determinize-pruned --acoustic-scale=0.083333 --beam=6.0 ark:- 'ark:|gzip -c > exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.1.gz' 
+transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/1/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- 
+LOG (apply-cmvn[5.5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 2474 utterances, errors on 0
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -89.3309 over 241578 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 2474 utterances; 0 had errors.
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average logdet is 1.23875 over 241578 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 2474 utterances; 0 had errors.
+LOG (gmm-rescore-lattice[5.5]:main():gmm-rescore-lattice.cc:103) Done 2474 lattices with errors on 0, #frames is 241578
+LOG (lattice-determinize-pruned[5.5]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 8.75275, output depth is 2.03464, over 241578 frames  (average num-frames = 97.6467).
+LOG (lattice-determinize-pruned[5.5]:main():lattice-determinize-pruned.cc:164) Done 2474 lattices, determinization finished earlier than specified by the beam (or output was empty) on 0 of these.
+# Accounting: time=5 threads=1
+# Ended (code 0) at Fri Mar 17 00:19:50 IST 2023, elapsed time 5 seconds

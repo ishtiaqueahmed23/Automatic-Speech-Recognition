@@ -1,0 +1,2 @@
+gmm-transform-means exp_dys_comb_vad/tri2/12.mat.new exp_dys_comb_vad/tri2/12.mdl exp_dys_comb_vad/tri2/12.mdl 
+LOG (gmm-transform-means[5.5]:main():gmm-transform-means.cc:103) Written model to exp_dys_comb_vad/tri2/12.mdl

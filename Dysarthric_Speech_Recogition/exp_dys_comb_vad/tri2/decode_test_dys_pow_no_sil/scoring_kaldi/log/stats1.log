@@ -1,0 +1,10 @@
+# cat exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil/scoring_kaldi/penalty_0.0/13.txt | align-text --special-symbol='***' ark:exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil/scoring_kaldi/test_filt.txt ark:- ark,t:- | utils/scoring/wer_per_utt_details.pl --special-symbol '***' | tee exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil/scoring_kaldi/wer_details/per_utt | utils/scoring/wer_per_spk_details.pl data_dys_comb_vad/test_dys_pow_no_sil/utt2spk > exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil/scoring_kaldi/wer_details/per_spk 
+# Started at Fri Mar 17 00:04:37 IST 2023
+#
+align-text '--special-symbol=***' ark:exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil/scoring_kaldi/test_filt.txt ark:- ark,t:- 
+utils/scoring/wer_per_spk_details.pl: Note: handling as utf-8 text
+LOG (align-text[5.5]:main():align-text.cc:135) Done 10000 sentences, failed for 0
+utils/scoring/wer_per_utt_details.pl: Note: handling as utf-8 text
+utils/scoring/wer_per_spk_details.pl: Note: handling as utf-8 text
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 00:04:37 IST 2023, elapsed time 0 seconds

@@ -1,0 +1,13 @@
+# nnet-show-progress --use-gpu=no exp_dys_comb_vad/DNN/11.mdl exp_dys_comb_vad/DNN/12.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+# Started at Fri Mar 17 00:55:19 IST 2023
+#
+nnet-show-progress --use-gpu=no exp_dys_comb_vad/DNN/11.mdl exp_dys_comb_vad/DNN/12.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+LOG (nnet-show-progress[5.5]:main():nnet-show-progress.cc:123) At position 0.5, objf per frame is -1.49857
+LOG (nnet-show-progress[5.5]:main():nnet-show-progress.cc:134) Total objf change per component is  [ 0.000278046 0.00293265 0.00530077 0.00344101 0.00171549 0.0387333 ]
+
+LOG (nnet-show-progress[5.5]:main():nnet-show-progress.cc:145) Parameter differences per layer are  [ 2.03035 5.91906 3.85194 2.67588 1.94203 4.15966 ]
+
+LOG (nnet-show-progress[5.5]:main():nnet-show-progress.cc:153) Relative parameter differences per layer are  [ 0.0300852 0.15944 0.0800497 0.0404291 0.0231672 0.145456 ]
+
+# Accounting: time=68 threads=1
+# Ended (code 0) at Fri Mar 17 00:56:27 IST 2023, elapsed time 68 seconds

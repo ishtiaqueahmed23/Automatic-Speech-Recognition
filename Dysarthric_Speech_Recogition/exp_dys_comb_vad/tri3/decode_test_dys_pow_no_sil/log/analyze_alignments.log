@@ -1,0 +1,6 @@
+# gunzip -c exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil 
+# Started at Fri Mar 17 00:17:03 IST 2023
+#
+/usr/bin/env: 'python': No such file or directory
+# Accounting: time=0 threads=1
+# Ended (code 127) at Fri Mar 17 00:17:03 IST 2023, elapsed time 0 seconds

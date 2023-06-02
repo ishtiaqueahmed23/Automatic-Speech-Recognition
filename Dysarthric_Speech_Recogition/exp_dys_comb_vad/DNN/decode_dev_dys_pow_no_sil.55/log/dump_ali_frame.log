@@ -1,0 +1,7 @@
+# ali-to-phones --per-frame=true exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/../55.mdl "ark:gunzip -c exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/ali_tmp.*.gz|" "ark,t:|gzip -c >exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/ali_frame_tmp.gz" 
+# Started at Tue Mar  7 18:48:10 IST 2023
+#
+ali-to-phones --per-frame=true exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/../55.mdl 'ark:gunzip -c exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/ali_tmp.*.gz|' 'ark,t:|gzip -c >exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55/ali_frame_tmp.gz' 
+LOG (ali-to-phones[5.5]:main():ali-to-phones.cc:134) Done 7573 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Mar  7 18:48:10 IST 2023, elapsed time 0 seconds

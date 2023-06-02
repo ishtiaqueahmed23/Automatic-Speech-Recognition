@@ -1,0 +1,687 @@
+[H[2J[3J============================================================================
+         MFCC Feature Extration & CMVN + Validation        
+============================================================================
+fix_data_dir.sh: kept all 10000 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/test_dys/.backup
+utils/validate_data_dir.sh: no such file data_dys_comb_vad/test_dys/feats.scp (if this is by design, specify --no-feats)
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/test_dys to data_dys_comb_vad/test_dys_pow
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/test_dys_pow but not in src data_dys_comb_vad/test_dys.  Moving it to
+ ... data_dys_comb_vad/test_dys_pow/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/test_dys_pow but not in src data_dys_comb_vad/test_dys.  Moving it to
+ ... data_dys_comb_vad/test_dys_pow/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/test_dys_pow
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/test_dys to data_dys_comb_vad/test_dys_ener
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/test_dys_ener but not in src data_dys_comb_vad/test_dys.  Moving it to
+ ... data_dys_comb_vad/test_dys_ener/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/test_dys_ener but not in src data_dys_comb_vad/test_dys.  Moving it to
+ ... data_dys_comb_vad/test_dys_ener/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/test_dys_ener
+steps/make_mfcc.sh --mfcc-config conf/mfcc_pow.conf --cmd run.pl --nj 10 data_dys_comb_vad/test_dys_pow exp_dys_comb_vad/make_mfcc/test_dys_pow dys_comb_vad_feats/test_dys_pow
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/test_dys_pow
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_dys_pow
+steps/make_mfcc.sh --mfcc-config conf/mfcc_ener.conf --cmd run.pl --nj 10 data_dys_comb_vad/test_dys_ener exp_dys_comb_vad/make_mfcc/test_dys_ener dys_comb_vad_feats/test_dys_ener
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/test_dys_ener
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_dys_ener
+sid/compute_vad_decision.sh --nj 5 --cmd run.pl data_dys_comb_vad/test_dys_ener exp_dys_comb_vad/make_mfcc/test_dys_ener dys_comb_vad_feats/test_dys_ener
+Created VAD output for test_dys_ener
+fix_data_dir.sh: kept all 10000 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/test_dys_pow/.backup
+local/nnet3/xvector/prepare_feats_for_egs.sh --nj 5 --cmd run.pl data_dys_comb_vad/test_dys_pow data_dys_comb_vad/test_dys_pow_no_sil dys_comb_vad_feats/test_dys_pow_no_sil
+local/nnet3/xvector/prepare_feats_for_egs.sh: Succeeded creating xvector features for test_dys_pow
+fix_data_dir.sh: kept all 10000 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/test_dys_pow_no_sil/.backup
+steps/compute_cmvn_stats.sh data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/make_mfcc/test_dys_pow_no_sil dys_comb_vad_feats/test_dys_pow_no_sil
+Succeeded creating CMVN stats for test_dys_pow_no_sil
+fix_data_dir.sh: kept all 76818 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/train_dys/.backup
+utils/validate_data_dir.sh: no such file data_dys_comb_vad/train_dys/feats.scp (if this is by design, specify --no-feats)
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/train_dys to data_dys_comb_vad/train_dys_pow
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/train_dys_pow but not in src data_dys_comb_vad/train_dys.  Moving it to
+ ... data_dys_comb_vad/train_dys_pow/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/train_dys_pow but not in src data_dys_comb_vad/train_dys.  Moving it to
+ ... data_dys_comb_vad/train_dys_pow/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/train_dys_pow
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/train_dys to data_dys_comb_vad/train_dys_ener
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/train_dys_ener but not in src data_dys_comb_vad/train_dys.  Moving it to
+ ... data_dys_comb_vad/train_dys_ener/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/train_dys_ener but not in src data_dys_comb_vad/train_dys.  Moving it to
+ ... data_dys_comb_vad/train_dys_ener/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/train_dys_ener
+steps/make_mfcc.sh --mfcc-config conf/mfcc_pow.conf --cmd run.pl --nj 10 data_dys_comb_vad/train_dys_pow exp_dys_comb_vad/make_mfcc/train_dys_pow dys_comb_vad_feats/train_dys_pow
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/train_dys_pow
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_dys_pow
+steps/make_mfcc.sh --mfcc-config conf/mfcc_ener.conf --cmd run.pl --nj 10 data_dys_comb_vad/train_dys_ener exp_dys_comb_vad/make_mfcc/train_dys_ener dys_comb_vad_feats/train_dys_ener
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/train_dys_ener
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_dys_ener
+sid/compute_vad_decision.sh --nj 5 --cmd run.pl data_dys_comb_vad/train_dys_ener exp_dys_comb_vad/make_mfcc/train_dys_ener dys_comb_vad_feats/train_dys_ener
+Created VAD output for train_dys_ener
+fix_data_dir.sh: kept all 76818 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/train_dys_pow/.backup
+local/nnet3/xvector/prepare_feats_for_egs.sh --nj 5 --cmd run.pl data_dys_comb_vad/train_dys_pow data_dys_comb_vad/train_dys_pow_no_sil dys_comb_vad_feats/train_dys_pow_no_sil
+local/nnet3/xvector/prepare_feats_for_egs.sh: Succeeded creating xvector features for train_dys_pow
+fix_data_dir.sh: kept all 76818 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/train_dys_pow_no_sil/.backup
+steps/compute_cmvn_stats.sh data_dys_comb_vad/train_dys_pow_no_sil exp_dys_comb_vad/make_mfcc/train_dys_pow_no_sil dys_comb_vad_feats/train_dys_pow_no_sil
+Succeeded creating CMVN stats for train_dys_pow_no_sil
+fix_data_dir.sh: kept all 7573 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/dev_dys/.backup
+utils/validate_data_dir.sh: no such file data_dys_comb_vad/dev_dys/feats.scp (if this is by design, specify --no-feats)
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/dev_dys to data_dys_comb_vad/dev_dys_pow
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/dev_dys_pow but not in src data_dys_comb_vad/dev_dys.  Moving it to
+ ... data_dys_comb_vad/dev_dys_pow/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/dev_dys_pow but not in src data_dys_comb_vad/dev_dys.  Moving it to
+ ... data_dys_comb_vad/dev_dys_pow/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/dev_dys_pow
+utils/copy_data_dir.sh: copied data from data_dys_comb_vad/dev_dys to data_dys_comb_vad/dev_dys_ener
+utils/copy_data_dir.sh: file feats.scp exists in dest data_dys_comb_vad/dev_dys_ener but not in src data_dys_comb_vad/dev_dys.  Moving it to
+ ... data_dys_comb_vad/dev_dys_ener/.backup/feats.scp
+utils/copy_data_dir.sh: file vad.scp exists in dest data_dys_comb_vad/dev_dys_ener but not in src data_dys_comb_vad/dev_dys.  Moving it to
+ ... data_dys_comb_vad/dev_dys_ener/.backup/vad.scp
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/dev_dys_ener
+steps/make_mfcc.sh --mfcc-config conf/mfcc_pow.conf --cmd run.pl --nj 10 data_dys_comb_vad/dev_dys_pow exp_dys_comb_vad/make_mfcc/dev_dys_pow dys_comb_vad_feats/dev_dys_pow
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/dev_dys_pow
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev_dys_pow
+steps/make_mfcc.sh --mfcc-config conf/mfcc_ener.conf --cmd run.pl --nj 10 data_dys_comb_vad/dev_dys_ener exp_dys_comb_vad/make_mfcc/dev_dys_ener dys_comb_vad_feats/dev_dys_ener
+utils/validate_data_dir.sh: Successfully validated data-directory data_dys_comb_vad/dev_dys_ener
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev_dys_ener
+sid/compute_vad_decision.sh --nj 5 --cmd run.pl data_dys_comb_vad/dev_dys_ener exp_dys_comb_vad/make_mfcc/dev_dys_ener dys_comb_vad_feats/dev_dys_ener
+Created VAD output for dev_dys_ener
+fix_data_dir.sh: kept all 7573 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/dev_dys_pow/.backup
+local/nnet3/xvector/prepare_feats_for_egs.sh --nj 5 --cmd run.pl data_dys_comb_vad/dev_dys_pow data_dys_comb_vad/dev_dys_pow_no_sil dys_comb_vad_feats/dev_dys_pow_no_sil
+local/nnet3/xvector/prepare_feats_for_egs.sh: Succeeded creating xvector features for dev_dys_pow
+fix_data_dir.sh: kept all 7573 utterances.
+fix_data_dir.sh: old files are kept in data_dys_comb_vad/dev_dys_pow_no_sil/.backup
+steps/compute_cmvn_stats.sh data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/make_mfcc/dev_dys_pow_no_sil dys_comb_vad_feats/dev_dys_pow_no_sil
+Succeeded creating CMVN stats for dev_dys_pow_no_sil
+============================================================================
+                   MonoPhone Training                	        
+============================================================================
+steps/train_mono.sh --nj 11 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/mono
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/mono/log/analyze_alignments.log
+827 warnings in exp_dys_comb_vad/mono/log/align.*.*.log
+320 warnings in exp_dys_comb_vad/mono/log/update.*.log
+exp_dys_comb_vad/mono: nj=11 align prob=-96.44 over 30.76h [retry=0.0%, fail=0.0%] states=133 gauss=977
+steps/train_mono.sh: Done training monophone system in exp_dys_comb_vad/mono
+============================================================================
+                   MonoPhone Testing             	        
+============================================================================
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+0 -0.0078125
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/mono/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/mono/decode_test_dys_pow_no_sil
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/mono/graph_test_dys_pow_no_sil exp_dys_comb_vad/mono/decode_test_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/mono/graph_test_dys_pow_no_sil exp_dys_comb_vad/mono/decode_test_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+0 -0.0078125
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/mono/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/mono/decode_dev_dys_pow_no_sil
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/mono/graph_dev_dys_pow_no_sil exp_dys_comb_vad/mono/decode_dev_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/mono/graph_dev_dys_pow_no_sil exp_dys_comb_vad/mono/decode_dev_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+============================================================================
+           tri1 : Deltas + Delta-Deltas Training      
+============================================================================
+steps/align_si.sh --boost-silence 1.25 --nj 11 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/mono exp_dys_comb_vad/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data_dys_comb_vad/train_dys_pow_no_sil using model from exp_dys_comb_vad/mono, putting alignments in exp_dys_comb_vad/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/mono_ali
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --cmd run.pl 2000 32000 data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/mono_ali exp_dys_comb_vad/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 33 with no stats; corresponding phone list: 135 136 137 138 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp_dys_comb_vad/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri1
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri1/log/analyze_alignments.log
+2 warnings in exp_dys_comb_vad/tri1/log/init_model.log
+1 warnings in exp_dys_comb_vad/tri1/log/build_tree.log
+74 warnings in exp_dys_comb_vad/tri1/log/update.*.log
+124 warnings in exp_dys_comb_vad/tri1/log/align.*.*.log
+2 warnings in exp_dys_comb_vad/tri1/log/questions.log
+exp_dys_comb_vad/tri1: nj=11 align prob=-93.53 over 30.76h [retry=0.0%, fail=0.0%] states=1576 gauss=32073 tree-impr=2.98
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp_dys_comb_vad/tri1
+============================================================================
+           tri1 : Deltas + Delta-Deltas  Decoding            
+============================================================================
+0.000421437 -0.0179429
+HCLGa is not stochastic
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri1/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_test_dys_pow_no_sil
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri1/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_test_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri1/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_test_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+0.000421437 -0.0179429
+HCLGa is not stochastic
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri1/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_dev_dys_pow_no_sil
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri1/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_dev_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri1/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri1/decode_dev_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+============================================================================
+                 tri2 : LDA + MLLT Training                    
+============================================================================
+steps/align_si.sh --nj 11 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri1 exp_dys_comb_vad/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data_dys_comb_vad/train_dys_pow_no_sil using model from exp_dys_comb_vad/tri1, putting alignments in exp_dys_comb_vad/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri1_ali
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3  --right-context=3 2000 16000 data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri1_ali exp_dys_comb_vad/tri2
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 33 with no stats; corresponding phone list: 135 136 137 138 
+This is a bad warning.
+steps/train_lda_mllt.sh: Converting alignments from exp_dys_comb_vad/tri1_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri2
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri2/log/analyze_alignments.log
+2 warnings in exp_dys_comb_vad/tri2/log/lda_acc.*.log
+68 warnings in exp_dys_comb_vad/tri2/log/update.*.log
+263 warnings in exp_dys_comb_vad/tri2/log/align.*.*.log
+2 warnings in exp_dys_comb_vad/tri2/log/init_model.log
+128 warnings in exp_dys_comb_vad/tri2/log/acc.*.*.log
+1 warnings in exp_dys_comb_vad/tri2/log/build_tree.log
+2 warnings in exp_dys_comb_vad/tri2/log/questions.log
+exp_dys_comb_vad/tri2: nj=11 align prob=-49.99 over 30.76h [retry=0.1%, fail=0.0%] states=1640 gauss=16034 tree-impr=2.83 lda-sum=13.02 mllt:impr,logdet=0.75,1.28
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp_dys_comb_vad/tri2
+============================================================================
+                 tri2 : LDA + MLLT Decoding                
+============================================================================
+0.000408996 -0.0177595
+HCLGa is not stochastic
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri2/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri2/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri2/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_test_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+0.000408996 -0.0177595
+HCLGa is not stochastic
+steps/decode.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri2/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_dev_dys_pow_no_sil
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri2/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_dev_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri2/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri2/decode_dev_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+============================================================================
+              tri3 : LDA + MLLT + SAT Training               
+============================================================================
+steps/align_si.sh --nj 11 --cmd run.pl --use-graphs true data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri2 exp_dys_comb_vad/tri2_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data_dys_comb_vad/train_dys_pow_no_sil using model from exp_dys_comb_vad/tri2, putting alignments in exp_dys_comb_vad/tri2_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri2_ali
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri2_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_sat.sh --cmd run.pl 2000 16000 data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri2_ali exp_dys_comb_vad/tri3
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp_dys_comb_vad/tri2_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 33 with no stats; corresponding phone list: 135 136 137 138 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp_dys_comb_vad/tri2_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri3/log/analyze_alignments.log
+309 warnings in exp_dys_comb_vad/tri3/log/acc.*.*.log
+33 warnings in exp_dys_comb_vad/tri3/log/fmllr.*.*.log
+2 warnings in exp_dys_comb_vad/tri3/log/est_alimdl.log
+69 warnings in exp_dys_comb_vad/tri3/log/update.*.log
+2 warnings in exp_dys_comb_vad/tri3/log/init_model.log
+288 warnings in exp_dys_comb_vad/tri3/log/align.*.*.log
+2 warnings in exp_dys_comb_vad/tri3/log/questions.log
+1 warnings in exp_dys_comb_vad/tri3/log/build_tree.log
+steps/train_sat.sh: Likelihood evolution:
+-53.0033 -52.8644 -52.6833 -52.4722 -51.5874 -51.1444 -50.8874 -50.6941 -50.5221 -50.1211 -49.9663 -49.7859 -49.6798 -49.5812 -49.5005 -49.4252 -49.3566 -49.293 -49.2323 -49.1015 -49.0141 -48.9567 -48.9017 -48.8517 -48.8067 -48.7619 -48.7153 -48.6721 -48.6291 -48.552 -48.5004 -48.478 -48.462 -48.4495 
+exp_dys_comb_vad/tri3: nj=11 align prob=-51.23 over 30.76h [retry=0.1%, fail=0.0%] states=1632 gauss=16027 fmllr-impr=2.20 over 14.54h tree-impr=3.84
+steps/train_sat.sh: done training SAT system in exp_dys_comb_vad/tri3
+steps/align_fmllr.sh --nj 11 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3 exp_dys_comb_vad/tri3_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data_dys_comb_vad/train_dys_pow_no_sil using exp_dys_comb_vad/tri3/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3_ali
+steps/diagnostic/analyze_alignments.sh: analyze_phone_length_stats.py failed, but ignoring the error (it's just for diagnostics)
+steps/diagnostic/analyze_alignments.sh: see stats in exp_dys_comb_vad/tri3_ali/log/analyze_alignments.log
+90 warnings in exp_dys_comb_vad/tri3_ali/log/align_pass2.*.log
+78 warnings in exp_dys_comb_vad/tri3_ali/log/align_pass1.*.log
+5 warnings in exp_dys_comb_vad/tri3_ali/log/fmllr.*.log
+============================================================================
+              tri3 : LDA + MLLT + SAT Decoding    Start             
+============================================================================
+0.000408996 -0.0177754
+HCLGa is not stochastic
+steps/decode_fmllr.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 5 --cmd run.pl --beam 10.0 --model exp_dys_comb_vad/tri3/final.alimdl --max-active 2000 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil.si
+local/score.sh --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+0.000408996 -0.0177754
+HCLGa is not stochastic
+steps/decode_fmllr.sh --nj 5 --cmd run.pl exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 5 --cmd run.pl --beam 10.0 --model exp_dys_comb_vad/tri3/final.alimdl --max-active 2000 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil.si
+local/score.sh --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+local/score.sh --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+============================================================================
+                    DNN Training                  
+============================================================================
+steps/nnet2/train_tanh.sh --stage -10 --mix-up 5000 --initial-learning-rate 0.005 --final-learning-rate 0.0005 --num-hidden-layers 5 --hidden_layer_dim 1024 --num-jobs-nnet 11 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3_ali exp_dys_comb_vad/DNN
+steps/nnet2/train_tanh.sh: calling get_lda.sh
+steps/nnet2/get_lda.sh --transform-dir exp_dys_comb_vad/tri3_ali --splice-width 4 --cmd run.pl data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3_ali exp_dys_comb_vad/DNN
+steps/nnet2/get_lda.sh: feature type is lda
+steps/nnet2/get_lda.sh: using transforms from exp_dys_comb_vad/tri3_ali
+steps/nnet2/get_lda.sh: Accumulating LDA statistics.
+steps/nnet2/get_lda.sh: Finished estimating LDA
+steps/nnet2/train_tanh.sh: calling get_egs.sh
+steps/nnet2/get_egs.sh --transform-dir exp_dys_comb_vad/tri3_ali --splice-width 4 --samples-per-iter 200000 --num-jobs-nnet 11 --stage 0 --cmd run.pl --io-opts --max-jobs-run 5 data_dys_comb_vad/train_dys_pow_no_sil data_dys_comb_vad/lang_uas exp_dys_comb_vad/tri3_ali exp_dys_comb_vad/DNN
+steps/nnet2/get_egs.sh: feature type is lda
+steps/nnet2/get_egs.sh: using transforms from exp_dys_comb_vad/tri3_ali
+steps/nnet2/get_egs.sh: working out number of frames of training data
+steps/nnet2/get_egs.sh: Every epoch, splitting the data up into 7 iterations,
+steps/nnet2/get_egs.sh: giving samples-per-iteration of 191399 (you requested 200000).
+Getting validation and training subset examples.
+steps/nnet2/get_egs.sh: extracting validation and training-subset alignments.
+Getting subsets of validation examples for diagnostics and combination.
+Creating training examples
+Generating training examples on disk
+steps/nnet2/get_egs.sh: rearranging examples into parts for different parallel jobs
+Shuffling the order of training examples
+(in order to avoid stressing the disk, these won't all run at once).
+steps/nnet2/get_egs.sh: Finished preparing training examples
+steps/nnet2/train_tanh.sh: initializing neural net
+Training transition probabilities and setting priors
+steps/nnet2/train_tanh.sh: Will train for 5 + 3 epochs, equalling 
+steps/nnet2/train_tanh.sh: 35 + 21 = 56 iterations, 
+steps/nnet2/train_tanh.sh: (while reducing learning rate) + (with constant learning rate).
+Training neural net (pass 0)
+Training neural net (pass 1)
+Training neural net (pass 2)
+Training neural net (pass 3)
+Training neural net (pass 4)
+Training neural net (pass 5)
+Training neural net (pass 6)
+Training neural net (pass 7)
+Training neural net (pass 8)
+Training neural net (pass 9)
+Training neural net (pass 10)
+Training neural net (pass 11)
+Training neural net (pass 12)
+Training neural net (pass 13)
+Training neural net (pass 14)
+Training neural net (pass 15)
+Training neural net (pass 16)
+Training neural net (pass 17)
+Training neural net (pass 18)
+Training neural net (pass 19)
+Training neural net (pass 20)
+Training neural net (pass 21)
+Training neural net (pass 22)
+Training neural net (pass 23)
+Training neural net (pass 24)
+Training neural net (pass 25)
+Training neural net (pass 26)
+Training neural net (pass 27)
+Training neural net (pass 28)
+Training neural net (pass 29)
+Training neural net (pass 30)
+Training neural net (pass 31)
+Training neural net (pass 32)
+Training neural net (pass 33)
+Mixing up from 1632 to 5000 components
+Training neural net (pass 34)
+Training neural net (pass 35)
+Training neural net (pass 36)
+Training neural net (pass 37)
+Training neural net (pass 38)
+Training neural net (pass 39)
+Training neural net (pass 40)
+Training neural net (pass 41)
+Training neural net (pass 42)
+Training neural net (pass 43)
+Training neural net (pass 44)
+Training neural net (pass 45)
+Training neural net (pass 46)
+Training neural net (pass 47)
+Training neural net (pass 48)
+Training neural net (pass 49)
+Training neural net (pass 50)
+Training neural net (pass 51)
+Training neural net (pass 52)
+Training neural net (pass 53)
+Training neural net (pass 54)
+Training neural net (pass 55)
+Getting average posterior for purposes of adjusting the priors.
+Re-adjusting priors based on computed posteriors
+Done
+Cleaning up data
+steps/nnet2/remove_egs.sh: Finished deleting examples in exp_dys_comb_vad/DNN/egs
+Removing most of the models
+============================================================================
+                    DNN Testing                  
+============================================================================
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 52 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 52 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+score best paths
+local/score.sh --iter 52 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 52 --transform-dir exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.52
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 52 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.52
+score best paths
+local/score.sh --iter 52 --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.52
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 53 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.53
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 53 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.53
+score best paths
+local/score.sh --iter 53 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.53
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 53 --transform-dir exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 53 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53
+score best paths
+local/score.sh --iter 53 --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 54 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.54
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 54 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.54
+score best paths
+local/score.sh --iter 54 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.54
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 54 --transform-dir exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.54
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 54 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.54
+score best paths
+local/score.sh --iter 54 --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.54
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 55 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.55
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 55 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.55
+score best paths
+local/score.sh --iter 55 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.55
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 55 --transform-dir exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 55 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55
+score best paths
+local/score.sh --iter 55 --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.55
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 56 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.56
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 56 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.56
+score best paths
+local/score.sh --iter 56 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.56
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 56 --transform-dir exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 56 exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56
+score best paths
+local/score.sh --iter 56 --cmd run.pl data_dys_comb_vad/dev_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_dev_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+============================================================================
+                     Training Testing Finished                      
+============================================================================

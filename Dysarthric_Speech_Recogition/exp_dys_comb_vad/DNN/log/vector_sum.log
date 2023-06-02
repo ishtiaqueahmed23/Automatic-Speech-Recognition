@@ -1,0 +1,7 @@
+# vector-sum exp_dys_comb_vad/DNN/post.1.vec exp_dys_comb_vad/DNN/post.10.vec exp_dys_comb_vad/DNN/post.11.vec exp_dys_comb_vad/DNN/post.2.vec exp_dys_comb_vad/DNN/post.3.vec exp_dys_comb_vad/DNN/post.4.vec exp_dys_comb_vad/DNN/post.5.vec exp_dys_comb_vad/DNN/post.6.vec exp_dys_comb_vad/DNN/post.7.vec exp_dys_comb_vad/DNN/post.8.vec exp_dys_comb_vad/DNN/post.9.vec exp_dys_comb_vad/DNN/post.vec 
+# Started at Fri Mar 17 04:05:29 IST 2023
+#
+vector-sum exp_dys_comb_vad/DNN/post.1.vec exp_dys_comb_vad/DNN/post.10.vec exp_dys_comb_vad/DNN/post.11.vec exp_dys_comb_vad/DNN/post.2.vec exp_dys_comb_vad/DNN/post.3.vec exp_dys_comb_vad/DNN/post.4.vec exp_dys_comb_vad/DNN/post.5.vec exp_dys_comb_vad/DNN/post.6.vec exp_dys_comb_vad/DNN/post.7.vec exp_dys_comb_vad/DNN/post.8.vec exp_dys_comb_vad/DNN/post.9.vec exp_dys_comb_vad/DNN/post.vec 
+LOG (vector-sum[5.5]:TypeThreeUsage():vector-sum.cc:175) Summed 11 vectors; wrote sum to exp_dys_comb_vad/DNN/post.vec
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 04:05:29 IST 2023, elapsed time 0 seconds

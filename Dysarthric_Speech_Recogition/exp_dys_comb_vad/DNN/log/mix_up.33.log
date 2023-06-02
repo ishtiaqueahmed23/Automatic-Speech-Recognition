@@ -1,0 +1,9 @@
+# nnet-am-mixup --min-count=10 --num-mixtures=5000 exp_dys_comb_vad/DNN/34.mdl exp_dys_comb_vad/DNN/34.mdl 
+# Started at Fri Mar 17 02:08:19 IST 2023
+#
+nnet-am-mixup --min-count=10 --num-mixtures=5000 exp_dys_comb_vad/DNN/34.mdl exp_dys_comb_vad/DNN/34.mdl 
+LOG (nnet-am-mixup[5.5]:GiveNnetCorrectTopology():mixup-nnet.cc:46) Adding SumGroupComponent to neural net.
+LOG (nnet-am-mixup[5.5]:MixUp():mixup-nnet.cc:214) Mixed up from dimension of 1632 to 5000 in the softmax layer.
+LOG (nnet-am-mixup[5.5]:main():nnet-am-mixup.cc:74) Mixed up neural net from exp_dys_comb_vad/DNN/34.mdl and wrote it to exp_dys_comb_vad/DNN/34.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 02:08:19 IST 2023, elapsed time 0 seconds

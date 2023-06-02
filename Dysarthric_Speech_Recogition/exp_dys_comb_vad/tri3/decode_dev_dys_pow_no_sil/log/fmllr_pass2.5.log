@@ -1,0 +1,28 @@
+# lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 "ark:gunzip -c exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.tmp.5.gz|" ark:- | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri3/final.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/spk2utt exp_dys_comb_vad/tri3/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/pre_trans.5 ark:- ark:- |" ark,s,cs:- ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans_tmp.5 && compose-transforms --b-is-affine=true ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans_tmp.5 ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/pre_trans.5 ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans.5 
+# Started at Fri Mar 17 00:19:39 IST 2023
+#
+weight-silence-post 0.01 1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri3/final.mdl ark:- ark:- 
+lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 'ark:gunzip -c exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/lat.tmp.5.gz|' ark:- 
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/spk2utt exp_dys_comb_vad/tri3/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/pre_trans.5 ark:- ark:- |' ark,s,cs:- ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans_tmp.5 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+transform-feats exp_dys_comb_vad/tri3/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/pre_trans.5 ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/utt2spk scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/cmvn.scp scp:data_dys_comb_vad/dev_dys_pow_no_sil/split5/5/feats.scp ark:- 
+LOG (apply-cmvn[5.5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1275 utterances, errors on 0
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -89.3309 over 140476 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 1275 utterances; 0 had errors.
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average logdet is -2.91729 over 140476 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 1275 utterances; 0 had errors.
+LOG (lattice-determinize-pruned[5.5]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 14.4865, output depth is 3.28916, over 140476 frames  (average num-frames = 110.177).
+LOG (lattice-determinize-pruned[5.5]:main():lattice-determinize-pruned.cc:164) Done 1275 lattices, determinization finished earlier than specified by the beam (or output was empty) on 0 of these.
+LOG (lattice-to-post[5.5]:main():lattice-to-post.cc:107) Overall average log-like/frame is -4.77485 over 140476 frames.  Average acoustic like/frame is -4.65115
+LOG (lattice-to-post[5.5]:main():lattice-to-post.cc:111) Done 1275 lattices.
+LOG (weight-silence-post[5.5]:main():weight-silence-post.cc:95) Done 1275 posteriors.
+LOG (gmm-est-fmllr[5.5]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.154201 per frame over 68434.9 frames.
+LOG (gmm-est-fmllr[5.5]:main():gmm-est-fmllr.cc:143) For speaker M16, auxf-impr from fMLLR is 0.154201, over 68434.9 frames.
+LOG (gmm-est-fmllr[5.5]:main():gmm-est-fmllr.cc:188) Done 1275 files, 0 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 0.154201 over 68434.9 frames.
+compose-transforms --b-is-affine=true ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans_tmp.5 ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/pre_trans.5 ark:exp_dys_comb_vad/tri3/decode_dev_dys_pow_no_sil/trans.5 
+# Accounting: time=4 threads=1
+# Ended (code 0) at Fri Mar 17 00:19:43 IST 2023, elapsed time 4 seconds

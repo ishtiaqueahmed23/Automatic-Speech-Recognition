@@ -1,0 +1,22 @@
+# nnet-get-egs --left-context=4 --right-context=4 "ark,s,cs:utils/filter_scp.pl --exclude exp_dys_comb_vad/DNN/valid_uttlist data_dys_comb_vad/train_dys_pow_no_sil/split11/11/feats.scp | apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.11 ark:- ark:- |" "ark,s,cs:gunzip -c exp_dys_comb_vad/tri3_ali/ali.11.gz | ali-to-pdf exp_dys_comb_vad/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |" ark:- | nnet-copy-egs ark:- ark:exp_dys_comb_vad/DNN/egs/egs_orig.1.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.2.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.3.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.4.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.5.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.6.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.7.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.8.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.9.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.10.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.11.11.ark 
+# Started at Fri Mar 17 00:20:38 IST 2023
+#
+nnet-get-egs --left-context=4 --right-context=4 'ark,s,cs:utils/filter_scp.pl --exclude exp_dys_comb_vad/DNN/valid_uttlist data_dys_comb_vad/train_dys_pow_no_sil/split11/11/feats.scp | apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.11 ark:- ark:- |' 'ark,s,cs:gunzip -c exp_dys_comb_vad/tri3_ali/ali.11.gz | ali-to-pdf exp_dys_comb_vad/tri3_ali/final.mdl ark:- ark:- | ali-to-post ark:- ark:- |' ark:- 
+nnet-copy-egs ark:- ark:exp_dys_comb_vad/DNN/egs/egs_orig.1.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.2.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.3.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.4.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.5.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.6.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.7.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.8.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.9.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.10.11.ark ark:exp_dys_comb_vad/DNN/egs/egs_orig.11.11.ark 
+transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.11 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/11/cmvn.scp scp:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+ali-to-post ark:- ark:- 
+ali-to-pdf exp_dys_comb_vad/tri3_ali/final.mdl ark:- ark:- 
+LOG (ali-to-pdf[5.5]:main():ali-to-pdf.cc:68) Converted 5098 alignments to pdf sequences.
+LOG (ali-to-post[5.5]:main():ali-to-post.cc:73) Converted 5098 alignments.
+LOG (apply-cmvn[5.5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 5086 utterances, errors on 0
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -89.3309 over 586636 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 5086 utterances; 0 had errors.
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average logdet is 0.180225 over 586636 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 5086 utterances; 0 had errors.
+LOG (nnet-get-egs[5.5]:main():nnet-get-egs.cc:174) Finished generating examples, successfully processed 5086 feature files, wrote 586636 examples,  with 586636 egs in total; 0 files had errors.
+LOG (nnet-copy-egs[5.5]:main():nnet-copy-egs.cc:170) Read 586636 neural-network training examples, wrote 586636
+# Accounting: time=17 threads=1
+# Ended (code 0) at Fri Mar 17 00:20:55 IST 2023, elapsed time 17 seconds

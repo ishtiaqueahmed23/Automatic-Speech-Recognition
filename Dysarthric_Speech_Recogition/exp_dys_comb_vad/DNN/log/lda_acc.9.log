@@ -1,0 +1,31 @@
+# ali-to-post "ark:gunzip -c exp_dys_comb_vad/tri3_ali/ali.9.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri3_ali/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp_dys_comb_vad/tri3_ali/final.mdl "ark,s,cs:utils/subset_scp.pl --quiet 909 data_dys_comb_vad/train_dys_pow_no_sil/split11/9/feats.scp | apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.9 ark:- ark:- | splice-feats --left-context=4 --right-context=4 ark:- ark:- |" ark,s,cs:- exp_dys_comb_vad/DNN/lda.9.acc 
+# Started at Fri Mar 17 00:20:00 IST 2023
+#
+acc-lda --rand-prune=4.0 exp_dys_comb_vad/tri3_ali/final.mdl 'ark,s,cs:utils/subset_scp.pl --quiet 909 data_dys_comb_vad/train_dys_pow_no_sil/split11/9/feats.scp | apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/cmvn.scp scp:- ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.9 ark:- ark:- | splice-feats --left-context=4 --right-context=4 ark:- ark:- |' ark,s,cs:- exp_dys_comb_vad/DNN/lda.9.acc 
+ali-to-post 'ark:gunzip -c exp_dys_comb_vad/tri3_ali/ali.9.gz|' ark:- 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri3_ali/final.mdl ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/cmvn.scp scp:- ark:- 
+transform-feats exp_dys_comb_vad/DNN/final.mat ark:- ark:- 
+splice-feats --left-context=4 --right-context=4 ark:- ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+transform-feats --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/9/utt2spk ark:exp_dys_comb_vad/tri3_ali/trans.9 ark:- ark:- 
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 100 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 200 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 300 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 400 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 500 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 600 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 700 utterances.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 800 utterances.
+LOG (apply-cmvn[5.5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 909 utterances, errors on 0
+LOG (ali-to-post[5.5]:main():ali-to-post.cc:73) Converted 5100 alignments.
+LOG (weight-silence-post[5.5]:main():weight-silence-post.cc:95) Done 5100 posteriors.
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -89.3309 over 87174 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 909 utterances; 0 had errors.
+LOG (acc-lda[5.5]:main():acc-lda.cc:114) Done 900 utterances.
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average logdet is 1.44989 over 87174 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 909 utterances; 0 had errors.
+LOG (acc-lda[5.5]:main():acc-lda.cc:117) Done 909 files, failed for 0
+LOG (acc-lda[5.5]:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Fri Mar 17 00:20:02 IST 2023, elapsed time 2 seconds

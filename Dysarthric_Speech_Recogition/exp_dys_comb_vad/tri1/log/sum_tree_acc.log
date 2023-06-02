@@ -1,0 +1,2 @@
+sum-tree-stats exp_dys_comb_vad/tri1/treeacc exp_dys_comb_vad/tri1/1.treeacc exp_dys_comb_vad/tri1/10.treeacc exp_dys_comb_vad/tri1/11.treeacc exp_dys_comb_vad/tri1/2.treeacc exp_dys_comb_vad/tri1/3.treeacc exp_dys_comb_vad/tri1/4.treeacc exp_dys_comb_vad/tri1/5.treeacc exp_dys_comb_vad/tri1/6.treeacc exp_dys_comb_vad/tri1/7.treeacc exp_dys_comb_vad/tri1/8.treeacc exp_dys_comb_vad/tri1/9.treeacc 
+LOG (sum-tree-stats[5.5]:main():sum-tree-stats.cc:88) Wrote summed accs ( 6068 individual stats)

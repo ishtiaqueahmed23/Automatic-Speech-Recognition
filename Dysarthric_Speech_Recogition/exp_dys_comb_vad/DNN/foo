@@ -1,0 +1,23 @@
+num-components 15
+num-updatable-components 6
+left-context 4
+right-context 4
+input-dim 40
+output-dim 1632
+parameter-dim 9693064
+component 0 : SpliceComponent, input-dim=40, output-dim=360, context=-4 -3 -2 -1 0 1 2 3 4 
+component 1 : FixedAffineComponent, input-dim=360, output-dim=360, linear-params-stddev=0.0530767, bias-params-stddev=0.0728181
+component 2 : AffineComponentPreconditioned, input-dim=360, output-dim=1024, linear-params-stddev=0.135607, bias-params-stddev=1.05549, learning-rate=0.0005, alpha=4, max-change=10
+component 3 : TanhComponent, input-dim=1024, output-dim=1024
+component 4 : AffineComponentPreconditioned, input-dim=1024, output-dim=1024, linear-params-stddev=0.0423866, bias-params-stddev=0.14285, learning-rate=0.0005, alpha=4, max-change=10
+component 5 : TanhComponent, input-dim=1024, output-dim=1024
+component 6 : AffineComponentPreconditioned, input-dim=1024, output-dim=1024, linear-params-stddev=0.0920008, bias-params-stddev=0.864383, learning-rate=0.0005, alpha=4, max-change=10
+component 7 : TanhComponent, input-dim=1024, output-dim=1024
+component 8 : AffineComponentPreconditioned, input-dim=1024, output-dim=1024, linear-params-stddev=0.0630061, bias-params-stddev=0.704741, learning-rate=0.0005, alpha=4, max-change=10
+component 9 : TanhComponent, input-dim=1024, output-dim=1024
+component 10 : AffineComponentPreconditioned, input-dim=1024, output-dim=1024, linear-params-stddev=0.16029, bias-params-stddev=1.99558, learning-rate=0.00025, alpha=4, max-change=10
+component 11 : TanhComponent, input-dim=1024, output-dim=1024
+component 12 : AffineComponentPreconditioned, input-dim=1024, output-dim=5000, linear-params-stddev=0.0583593, bias-params-stddev=1.77643, learning-rate=0.00025, alpha=4, max-change=10
+component 13 : SoftmaxComponent, input-dim=5000, output-dim=5000
+component 14 : SumGroupComponent, input-dim=5000, output-dim=1632
+prior dimension: 1632, prior sum: 0.999999, prior min: 4.99995e-06

@@ -1,0 +1,9 @@
+# gmm-init-mono --shared-phones=data_dys_comb_vad/lang_uas/phones/sets.int "--train-feats=ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/feats.scp ark:- | add-deltas  ark:- ark:- | subset-feats --n=10 ark:- ark:-|" data_dys_comb_vad/lang_uas/topo 39 exp_dys_comb_vad/mono/0.mdl exp_dys_comb_vad/mono/tree 
+# Started at Thu Mar 16 23:34:44 IST 2023
+#
+gmm-init-mono --shared-phones=data_dys_comb_vad/lang_uas/phones/sets.int '--train-feats=ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/feats.scp ark:- | add-deltas  ark:- ark:- | subset-feats --n=10 ark:- ark:-|' data_dys_comb_vad/lang_uas/topo 39 exp_dys_comb_vad/mono/0.mdl exp_dys_comb_vad/mono/tree 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+subset-feats --n=10 ark:- ark:- 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Mar 16 23:34:44 IST 2023, elapsed time 0 seconds

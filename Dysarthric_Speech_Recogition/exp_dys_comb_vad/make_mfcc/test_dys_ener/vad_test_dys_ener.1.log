@@ -1,0 +1,8 @@
+# compute-vad --config=conf/vad.conf scp:data_dys_comb_vad/test_dys_ener/split5/1/feats.scp ark,scp:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_ener/vad_test_dys_ener.1.ark,/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_ener/vad_test_dys_ener.1.scp 
+# Started at Thu Mar 16 23:32:54 IST 2023
+#
+compute-vad --config=conf/vad.conf scp:data_dys_comb_vad/test_dys_ener/split5/1/feats.scp ark,scp:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_ener/vad_test_dys_ener.1.ark,/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_ener/vad_test_dys_ener.1.scp 
+LOG (compute-vad[5.5]:main():compute-vad.cc:95) Applied energy based voice activity detection; processed 2548 utterances successfully; 0 had empty features, and 0 were completely unvoiced.
+LOG (compute-vad[5.5]:main():compute-vad.cc:99) Proportion of voiced frames was 0.639022 over 654846 frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Mar 16 23:32:55 IST 2023, elapsed time 1 seconds

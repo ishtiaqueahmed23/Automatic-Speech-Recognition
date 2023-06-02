@@ -1,0 +1,7 @@
+# nnet-shuffle-egs --srand=$[7+(11*4)] ark:exp_dys_comb_vad/DNN/egs/egs_tmp.7.4.ark ark:exp_dys_comb_vad/DNN/egs/egs.7.4.ark 
+# Started at Fri Mar 17 00:23:38 IST 2023
+#
+nnet-shuffle-egs --srand=51 ark:exp_dys_comb_vad/DNN/egs/egs_tmp.7.4.ark ark:exp_dys_comb_vad/DNN/egs/egs.7.4.ark 
+LOG (nnet-shuffle-egs[5.5]:main():nnet-shuffle-egs.cc:104) Shuffled order of 143272 neural-network training examples 
+# Accounting: time=6 threads=1
+# Ended (code 0) at Fri Mar 17 00:23:44 IST 2023, elapsed time 6 seconds

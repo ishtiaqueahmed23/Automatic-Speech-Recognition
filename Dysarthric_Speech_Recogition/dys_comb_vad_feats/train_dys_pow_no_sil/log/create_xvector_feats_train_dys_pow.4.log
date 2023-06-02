@@ -1,0 +1,11 @@
+# apply-cmvn-sliding --norm-vars=false --center=true --cmn-window=300 scp:data_dys_comb_vad/train_dys_pow/split5/4/feats.scp ark:- | select-voiced-frames ark:- scp,s,cs:data_dys_comb_vad/train_dys_pow/split5/4/vad.scp ark:- | copy-feats --compress=true --write-num-frames=ark,t:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/log/utt2num_frames.4 ark:- ark,scp:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/xvector_feats_train_dys_pow.4.ark,/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/xvector_feats_train_dys_pow.4.scp 
+# Started at Thu Mar 16 23:34:27 IST 2023
+#
+select-voiced-frames ark:- scp,s,cs:data_dys_comb_vad/train_dys_pow/split5/4/vad.scp ark:- 
+apply-cmvn-sliding --norm-vars=false --center=true --cmn-window=300 scp:data_dys_comb_vad/train_dys_pow/split5/4/feats.scp ark:- 
+copy-feats --compress=true --write-num-frames=ark,t:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/log/utt2num_frames.4 ark:- ark,scp:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/xvector_feats_train_dys_pow.4.ark,/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/train_dys_pow_no_sil/xvector_feats_train_dys_pow.4.scp 
+LOG (apply-cmvn-sliding[5.5]:main():apply-cmvn-sliding.cc:75) Applied sliding-window cepstral mean normalization to 14478 utterances, 0 had errors.
+LOG (select-voiced-frames[5.5]:main():select-voiced-frames.cc:106) Done selecting voiced frames; processed 14478 utterances, 0 had errors.
+LOG (copy-feats[5.5]:main():copy-feats.cc:143) Copied 14478 feature matrices.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Mar 16 23:34:29 IST 2023, elapsed time 2 seconds

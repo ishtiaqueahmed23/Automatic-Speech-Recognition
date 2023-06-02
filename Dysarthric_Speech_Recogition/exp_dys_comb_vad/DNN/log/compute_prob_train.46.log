@@ -1,0 +1,8 @@
+# nnet-compute-prob exp_dys_comb_vad/DNN/46.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+# Started at Fri Mar 17 03:10:43 IST 2023
+#
+nnet-compute-prob exp_dys_comb_vad/DNN/46.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+LOG (nnet-compute-prob[5.5]:main():nnet-compute-prob.cc:91) Saw 4000 examples, average probability is -0.966094 and accuracy is 0.7385 with total weight 4000
+-0.966094
+# Accounting: time=35 threads=1
+# Ended (code 0) at Fri Mar 17 03:11:18 IST 2023, elapsed time 35 seconds

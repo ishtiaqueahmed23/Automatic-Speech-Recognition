@@ -1,0 +1,7 @@
+# compile-train-graphs --read-disambig-syms=data_dys_comb_vad/lang_uas/phones/disambig.int exp_dys_comb_vad/tri2/tree exp_dys_comb_vad/tri2/1.mdl data_dys_comb_vad/lang_uas/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data_dys_comb_vad/lang_uas/words.txt < data_dys_comb_vad/train_dys_pow_no_sil/split11/7/text |" "ark:|gzip -c >exp_dys_comb_vad/tri2/fsts.7.gz" 
+# Started at Thu Mar 16 23:57:51 IST 2023
+#
+compile-train-graphs --read-disambig-syms=data_dys_comb_vad/lang_uas/phones/disambig.int exp_dys_comb_vad/tri2/tree exp_dys_comb_vad/tri2/1.mdl data_dys_comb_vad/lang_uas/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data_dys_comb_vad/lang_uas/words.txt < data_dys_comb_vad/train_dys_pow_no_sil/split11/7/text |' 'ark:|gzip -c >exp_dys_comb_vad/tri2/fsts.7.gz' 
+LOG (compile-train-graphs[5.5]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 6829 graphs, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Mar 16 23:57:53 IST 2023, elapsed time 2 seconds

@@ -1,0 +1,21 @@
+# acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri1_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri2/0.mat ark:- ark:- |" "ark:gunzip -c exp_dys_comb_vad/tri1_ali/ali.5.gz|" exp_dys_comb_vad/tri2/5.treeacc 
+# Started at Thu Mar 16 23:57:47 IST 2023
+#
+acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp_dys_comb_vad/tri1_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp_dys_comb_vad/tri2/0.mat ark:- ark:- |' 'ark:gunzip -c exp_dys_comb_vad/tri1_ali/ali.5.gz|' exp_dys_comb_vad/tri2/5.treeacc 
+transform-feats exp_dys_comb_vad/tri2/0.mat ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/utt2spk scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/cmvn.scp scp:data_dys_comb_vad/train_dys_pow_no_sil/split11/5/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 1000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 2000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 3000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 4000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 5000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 6000 utterances.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:101) Processed 7000 utterances.
+LOG (apply-cmvn[5.5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 7647 utterances, errors on 0
+LOG (transform-feats[5.5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -90.6155 over 977805 frames.
+LOG (transform-feats[5.5]:main():transform-feats.cc:161) Applied transform to 7647 utterances; 0 had errors.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:118) Accumulated stats for 7647 files, 0 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats[5.5]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 5450
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Mar 16 23:57:49 IST 2023, elapsed time 2 seconds

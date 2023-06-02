@@ -1,0 +1,9 @@
+steps/nnet2/decode.sh --cmd run.pl --nj 5 --num-threads 6 --parallel-opts -pe smp 6 -l mem_free=4G,ram_free=0.7G --iter 52 --transform-dir exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+steps/nnet2/decode.sh: feature type is lda
+steps/nnet2/decode.sh: using transforms from exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 52 exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+score best paths
+local/score.sh --iter 52 --cmd run.pl data_dys_comb_vad/test_dys_pow_no_sil exp_dys_comb_vad/tri3/graph_test_dys_pow_no_sil exp_dys_comb_vad/DNN/decode_test_dys_pow_no_sil.52
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.

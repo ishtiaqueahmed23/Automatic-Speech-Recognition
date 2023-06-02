@@ -1,0 +1,5 @@
+# cat exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53/scoring_kaldi/penalty_0.5/14.txt | compute-wer --text --mode=present ark:exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53/scoring_kaldi/test_filt.txt ark,p:- >& exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.53/wer_14_0.5 
+# Started at Fri Mar 17 04:14:11 IST 2023
+#
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 04:14:11 IST 2023, elapsed time 0 seconds

@@ -1,0 +1,7 @@
+# nnet-copy-egs --random=false --srand=3 "ark:cat exp_dys_comb_vad/DNN/egs/egs_orig.3.*.ark|" ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.0.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.1.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.2.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.3.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.4.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.5.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.6.ark 
+# Started at Fri Mar 17 00:21:00 IST 2023
+#
+nnet-copy-egs --random=false --srand=3 'ark:cat exp_dys_comb_vad/DNN/egs/egs_orig.3.*.ark|' ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.0.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.1.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.2.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.3.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.4.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.5.ark ark:exp_dys_comb_vad/DNN/egs/egs_tmp.3.6.ark 
+LOG (nnet-copy-egs[5.5]:main():nnet-copy-egs.cc:170) Read 1002911 neural-network training examples, wrote 1002911
+# Accounting: time=29 threads=1
+# Ended (code 0) at Fri Mar 17 00:21:29 IST 2023, elapsed time 29 seconds

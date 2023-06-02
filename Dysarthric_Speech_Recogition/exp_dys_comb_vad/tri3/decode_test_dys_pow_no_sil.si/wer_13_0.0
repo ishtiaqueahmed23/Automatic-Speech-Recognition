@@ -1,0 +1,4 @@
+compute-wer --text --mode=present ark:exp_dys_comb_vad/tri3/decode_test_dys_pow_no_sil.si/scoring_kaldi/test_filt.txt ark,p:- 
+%WER 54.50 [ 5450 / 10000, 0 ins, 5 del, 5445 sub ]
+%SER 54.50 [ 5450 / 10000 ]
+Scored 10000 sentences, 0 not present in hyp.

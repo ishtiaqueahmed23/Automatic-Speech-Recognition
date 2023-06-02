@@ -1,0 +1,4 @@
+cluster-phones exp_dys_comb_vad/tri2/treeacc data_dys_comb_vad/lang_uas/phones/sets.int exp_dys_comb_vad/tri2/questions.int 
+WARNING (cluster-phones[5.5]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 6 7 8 9 10 
+WARNING (cluster-phones[5.5]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 135 136 137 138 
+LOG (cluster-phones[5.5]:main():cluster-phones.cc:129) Wrote questions to exp_dys_comb_vad/tri2/questions.int

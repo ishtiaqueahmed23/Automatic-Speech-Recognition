@@ -1,0 +1,9 @@
+# nnet-am-average exp_dys_comb_vad/DNN/17.1.mdl exp_dys_comb_vad/DNN/17.2.mdl exp_dys_comb_vad/DNN/17.3.mdl exp_dys_comb_vad/DNN/17.4.mdl exp_dys_comb_vad/DNN/17.5.mdl exp_dys_comb_vad/DNN/17.6.mdl exp_dys_comb_vad/DNN/17.7.mdl exp_dys_comb_vad/DNN/17.8.mdl exp_dys_comb_vad/DNN/17.9.mdl exp_dys_comb_vad/DNN/17.10.mdl exp_dys_comb_vad/DNN/17.11.mdl - | nnet-am-copy --learning-rates=0.00163401379470506:0.00163401379470506:0.00163401379470506:0.00163401379470506:0.00081700689735253:0.00081700689735253 - exp_dys_comb_vad/DNN/17.mdl 
+# Started at Fri Mar 17 01:11:55 IST 2023
+#
+nnet-am-average exp_dys_comb_vad/DNN/17.1.mdl exp_dys_comb_vad/DNN/17.2.mdl exp_dys_comb_vad/DNN/17.3.mdl exp_dys_comb_vad/DNN/17.4.mdl exp_dys_comb_vad/DNN/17.5.mdl exp_dys_comb_vad/DNN/17.6.mdl exp_dys_comb_vad/DNN/17.7.mdl exp_dys_comb_vad/DNN/17.8.mdl exp_dys_comb_vad/DNN/17.9.mdl exp_dys_comb_vad/DNN/17.10.mdl exp_dys_comb_vad/DNN/17.11.mdl - 
+nnet-am-copy --learning-rates=0.00163401379470506:0.00163401379470506:0.00163401379470506:0.00163401379470506:0.00081700689735253:0.00081700689735253 - exp_dys_comb_vad/DNN/17.mdl 
+LOG (nnet-am-average[5.5]:main():nnet-am-average.cc:253) Averaged parameters of 11 neural nets, and wrote to -
+LOG (nnet-am-copy[5.5]:main():nnet-am-copy.cc:207) Copied neural net from - to exp_dys_comb_vad/DNN/17.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 01:11:55 IST 2023, elapsed time 0 seconds

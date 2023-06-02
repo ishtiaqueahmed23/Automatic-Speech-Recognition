@@ -1,0 +1,7 @@
+# nnet-show-progress --use-gpu=no exp_dys_comb_vad/DNN/1.mdl exp_dys_comb_vad/DNN/2.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+# Started at Fri Mar 17 00:27:02 IST 2023
+#
+nnet-show-progress --use-gpu=no exp_dys_comb_vad/DNN/1.mdl exp_dys_comb_vad/DNN/2.mdl ark:exp_dys_comb_vad/DNN/egs/train_diagnostic.egs 
+WARNING (nnet-show-progress[5.5]:main():nnet-show-progress.cc:88) Parameter-dim mismatch, cannot show progress.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Mar 17 00:27:02 IST 2023, elapsed time 0 seconds

@@ -1,0 +1,2 @@
+compute-cmvn-stats --spk2utt=ark:data_dys_comb_vad/test_dys_pow_no_sil/spk2utt scp:data_dys_comb_vad/test_dys_pow_no_sil/feats.scp ark,scp:/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_pow_no_sil/cmvn_test_dys_pow_no_sil.ark,/home/ishtiaque/Music/FOR_ISHTIYAQ/dys_comb_vad_feats/test_dys_pow_no_sil/cmvn_test_dys_pow_no_sil.scp 
+LOG (compute-cmvn-stats[5.5]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 10000 utterances; 0 had errors.

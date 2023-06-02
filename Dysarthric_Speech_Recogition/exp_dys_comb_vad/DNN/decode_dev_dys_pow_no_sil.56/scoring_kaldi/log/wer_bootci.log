@@ -1,0 +1,6 @@
+# compute-wer-bootci --mode=present ark:exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/scoring_kaldi/test_filt.txt ark:exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/scoring_kaldi/penalty_0.0/7.txt > exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/scoring_kaldi/wer_details/wer_bootci 
+# Started at Fri Mar 17 04:27:09 IST 2023
+#
+compute-wer-bootci --mode=present ark:exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/scoring_kaldi/test_filt.txt ark:exp_dys_comb_vad/DNN/decode_dev_dys_pow_no_sil.56/scoring_kaldi/penalty_0.0/7.txt 
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Mar 17 04:27:10 IST 2023, elapsed time 1 seconds

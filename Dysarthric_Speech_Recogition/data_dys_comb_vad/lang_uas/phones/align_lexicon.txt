@@ -1,0 +1,468 @@
+!SIL !SIL SIL_S
+<SPOKEN_NOISE> <SPOKEN_NOISE> SPN_S
+<UNK> <UNK> SPN_S
+<eps> <eps> SIL
+A A ax_S
+ABBREVIATED ABBREVIATED ax_B b_I r_I iy_I v_I iy_I ey_I t_I ax_I d_E
+ABLE-BODIED ABLE-BODIED ey_B b_I ax_I l_I b_I aa_I d_I iy_I d_E
+ABLUTIONS ABLUTIONS ae_B b_I l_I uw_I sh_I ax_I n_I z_E
+ABOUT ABOUT ax_B b_I aw_I t_E
+ABSOLVE ABSOLVE ax_B b_I z_I aa_I l_I v_E
+ABSORB ABSORB ax_B b_I z_I ao_I r_I b_E
+ACHIEVE ACHIEVE ax_B ch_I iy_I v_E
+ADAPT ADAPT ax_B d_I ae_I p_I t_E
+ADHESION ADHESION ae_B d_I hh_I iy_I zh_I ax_I n_E
+ADJACENT ADJACENT ax_B jh_I ey_I s_I ax_I n_I t_E
+ADULATION ADULATION ae_B jh_I ax_I l_I ey_I sh_I ax_I n_E
+ADVANTAGEOUS ADVANTAGEOUS ae_B d_I v_I ax_I n_I t_I ey_I jh_I ax_I s_E
+ADVICE ADVICE ax_B d_I v_I ay_I s_E
+AFTERTHOUGHT AFTERTHOUGHT ae_B f_I t_I ax_I th_I aa_I t_E
+AGRICULTURAL AGRICULTURAL ae_B g_I r_I ax_I k_I ah_I l_I ch_I ax_I ax_I l_E
+AHEAD AHEAD ax_B hh_I eh_I d_E
+ALL ALL ao_B l_E
+ALLURE ALLURE ax_B l_I uh_I r_E
+ALOFT ALOFT ax_B l_I ao_I f_I t_E
+ALOOF ALOOF ax_B l_I uw_I f_E
+ALPHA ALPHA ae_B l_I f_I ax_E
+ALT ALT aa_B l_I t_E
+ALTHOUGH ALTHOUGH ao_B l_I dh_I ow_E
+AMETHYSTS AMETHYSTS ae_B m_I ax_I th_I ax_I s_I t_I s_E
+AN AN ae_B n_E
+AND AND ae_B n_I d_E
+AND AND ax_B n_I d_E
+ANNOYED ANNOYED ax_B n_I oy_I d_E
+ANXIETIES ANXIETIES ax_B ng_I z_I ay_I ax_I t_I iy_I z_E
+ANYBODY ANYBODY eh_B n_I iy_I b_I ax_I d_I iy_E
+ANYTHING ANYTHING eh_B n_I iy_I th_I ih_I ng_E
+APOTHECARY APOTHECARY ax_B p_I aa_I th_I ax_I k_I eh_I r_I iy_E
+APPRECIABLE APPRECIABLE ax_B p_I r_I iy_I sh_I ax_I b_I ax_I l_E
+APPREHEND APPREHEND ae_B p_I r_I ax_I hh_I eh_I n_I d_E
+APPROACH APPROACH ax_B p_I r_I ow_I ch_E
+ARE ARE aa_B r_E
+AS AS ae_B z_E
+ASHAMED ASHAMED ax_B sh_I ey_I m_I d_E
+ASIA ASIA ey_B zh_I ax_E
+ASTOUNDED ASTOUNDED ax_B s_I t_I aw_I n_I d_I ax_I d_E
+AT AT ae_B t_E
+ATROCIOUS ATROCIOUS ax_B t_I r_I ow_I sh_I ax_I s_E
+AUTHORITATIVE AUTHORITATIVE ax_B th_I ao_I r_I ax_I t_I ey_I t_I ax_I v_E
+AUTOBIOGRAPHY AUTOBIOGRAPHY ao_B t_I ax_I b_I ay_I aa_I g_I r_I ax_I f_I iy_E
+AVENUES AVENUES ae_B v_I ax_I n_I uw_I z_E
+AVERSION AVERSION ax_B v_I er_I zh_I ax_I n_E
+AWAY AWAY ax_B w_I ey_E
+AWHILE AWHILE ax_B w_I ay_I l_E
+AZURE AZURE ae_B zh_I ax_E
+BABYHOOD BABYHOOD b_B ey_I b_I iy_I hh_I uh_I d_E
+BACHELOR BACHELOR b_B ae_I ch_I ax_I l_I ax_E
+BACKSPACE BACKSPACE b_B ae_I k_I s_I p_I ey_I s_E
+BALL BALL b_B ao_I l_E
+BALLOONS BALLOONS b_B ax_I l_I uw_I n_I z_E
+BANANA BANANA b_B ax_I n_I ae_I n_I ax_E
+BATH BATH b_B ae_I th_E
+BATHE BATHE b_B ey_I dh_E
+BATHS BATHS b_B ae_I th_I s_E
+BATHTUB BATHTUB b_B ae_I th_I t_I ax_I b_E
+BATTLEFIELD BATTLEFIELD b_B ae_I t_I ax_I l_I f_I iy_I l_I d_E
+BATTLEMENTS BATTLEMENTS b_B ae_I t_I ax_I l_I m_I ax_I n_I t_I s_E
+BATTLESHIP BATTLESHIP b_B ae_I t_I ax_I l_I sh_I ih_I p_E
+BE BE b_B ey_E
+BE BE b_B iy_E
+BEEF BEEF b_B iy_I f_E
+BEEN BEEN b_B ax_I n_E
+BEGUILE BEGUILE b_B ax_I g_I ay_I l_E
+BEHAVIOR BEHAVIOR b_B ax_I hh_I ey_I v_I y_I ax_E
+BELEAGUERING BELEAGUERING b_B ax_I l_I iy_I g_I ax_I ax_I ng_E
+BENGAL BENGAL b_B eh_I ng_I g_I ax_I l_E
+BEQUEATH BEQUEATH b_B ax_I k_I w_I iy_I th_E
+BERSERKER BERSERKER b_B ax_I s_I er_I k_I ax_E
+BETOOK BETOOK b_B ih_I t_I uh_I k_E
+BETROTH BETROTH b_B ih_I t_I r_I ao_I th_E
+BIRMINGHAM BIRMINGHAM b_B er_I m_I ax_I ng_I hh_I ae_I m_E
+BLITHE BLITHE b_B l_I ay_I dh_E
+BLOODSHED BLOODSHED b_B l_I ah_I d_I sh_I eh_I d_E
+BLUE BLUE b_B l_I uw_E
+BLUEBELLS BLUEBELLS b_B l_I uw_I b_I eh_I l_I z_E
+BOGIES BOGIES b_B ow_I g_I iy_I z_E
+BOOTH BOOTH b_B uw_I th_E
+BOQUETS BOQUETS b_B ow_I k_I ey_I s_E
+BOSOM BOSOM b_B uh_I z_I ax_I m_E
+BOTH BOTH b_B ow_I th_E
+BOTHER BOTHER b_B aa_I dh_I ax_E
+BOULEVARD BOULEVARD b_B uh_I l_I ax_I v_I aa_I r_I d_E
+BOYHOOD BOYHOOD b_B oy_I hh_I uh_I d_E
+BRAVO BRAVO b_B r_I aa_I v_I ow_E
+BROIL BROIL b_B r_I oy_I l_E
+BROTHERHOOD BROTHERHOOD b_B r_I ah_I dh_I ax_I hh_I uh_I d_E
+BROWBEAT BROWBEAT b_B r_I aw_I b_I iy_I t_E
+BRUSH BRUSH b_B r_I ah_I sh_E
+BUFFOON BUFFOON b_B ax_I f_I uw_I n_E
+BULGE BULGE b_B ah_I l_I jh_E
+BULRUSH BULRUSH b_B uh_I l_I r_I ax_I sh_E
+BUNGALOWS BUNGALOWS b_B ah_I ng_I g_I ax_I l_I ow_I z_E
+BURROWS BURROWS b_B er_I ow_I z_E
+BUSHELS BUSHELS b_B uh_I sh_I ax_I l_I z_E
+BUT BUT b_B ah_I t_E
+BUTCHER BUTCHER b_B uh_I ch_I ax_E
+BUTTERFLIES BUTTERFLIES b_B ah_I t_I ax_I f_I l_I ay_I z_E
+BY BY b_B ay_E
+CALL CALL k_B ao_I l_E
+CAN CAN k_B ae_I n_E
+CAN CAN k_B ax_I n_E
+CANDLELIGHT CANDLELIGHT k_B ae_I n_I d_I ax_I l_I l_I ay_I t_E
+CAR CAR k_B aa_I r_E
+CARROT CARROT k_B eh_I r_I ax_I t_E
+CASUALTIES CASUALTIES k_B ae_I zh_I ax_I l_I t_I iy_I z_E
+CATHOLIC CATHOLIC k_B ae_I th_I l_I ax_I k_E
+CELEBRITY CELEBRITY s_B ax_I l_I eh_I b_I r_I ax_I t_I iy_E
+CHAIR CHAIR ch_B eh_I r_E
+CHAMBERMAID CHAMBERMAID ch_B ey_I m_I b_I ax_I m_I ey_I d_E
+CHARLIE CHARLIE ch_B aa_I r_I l_I iy_E
+CHATTERBOX CHATTERBOX ch_B ae_I t_I ax_I b_I aa_I k_I s_E
+CHAUFFEUR CHAUFFEUR sh_B ow_I f_I ax_E
+CHESHIRE CHESHIRE ch_B eh_I sh_I ax_E
+CHIDE CHIDE ch_B ay_I d_E
+CHOICE CHOICE ch_B oy_I s_E
+CHOKING CHOKING ch_B ow_I k_I ax_I ng_E
+CHOWDER CHOWDER ch_B aw_I d_I ax_E
+CIRCULAR CIRCULAR s_B er_I k_I y_I ax_I l_I ax_E
+CLERGYMAN CLERGYMAN k_B l_I er_I jh_I iy_I m_I ae_I n_E
+CLOWN CLOWN k_B l_I aw_I n_E
+COBBLESTONES COBBLESTONES k_B aa_I b_I ax_I l_I s_I t_I ow_I n_I z_E
+COHERENT COHERENT k_B ow_I hh_I ih_I r_I ax_I n_I t_E
+COIL COIL k_B oy_I l_E
+COME COME k_B ah_I m_E
+COMMAND COMMAND k_B ax_I m_I ae_I n_I d_E
+COMMERCIAL COMMERCIAL k_B ax_I m_I er_I sh_I ax_I l_E
+COMPOSURE COMPOSURE k_B ax_I m_I p_I ow_I zh_I ax_E
+CONTROL CONTROL k_B ax_I n_I t_I r_I ow_I l_E
+CONVENIENCE CONVENIENCE k_B ax_I n_I v_I iy_I n_I y_I ax_I n_I s_E
+CONVULSION CONVULSION k_B ax_I n_I v_I ah_I l_I sh_I ax_I n_E
+COPENHAGEN COPENHAGEN k_B ow_I p_I ax_I n_I hh_I ey_I g_I ax_I n_E
+COPY COPY k_B aa_I p_I iy_E
+COULD COULD k_B uh_I d_E
+COWBOYS COWBOYS k_B aw_I b_I oy_I z_E
+COWHIDE COWHIDE k_B aw_I hh_I ay_I d_E
+CRAYON CRAYON k_B r_I ey_I aa_I n_E
+CRYING CRYING k_B r_I ay_I ax_I ng_E
+CUP CUP k_B ah_I p_E
+CUSHY CUSHY k_B uh_I sh_I iy_E
+CUT CUT k_B ah_I t_E
+DAY DAY d_B ey_E
+DELETE DELETE d_B ax_I l_I iy_I t_E
+DELTA DELTA d_B eh_I l_I t_I ax_E
+DELUGE DELUGE d_B eh_I l_I y_I uw_I jh_E
+DEMOLISH DEMOLISH d_B ax_I m_I aa_I l_I ax_I sh_E
+DESIGNATE DESIGNATE d_B eh_I z_I ax_I g_I n_I ey_I t_E
+DID DID d_B ax_I d_E
+DIGEST DIGEST d_B ax_I jh_I eh_I s_I t_E
+DISPLEASURE DISPLEASURE d_B ax_I s_I p_I l_I eh_I zh_I ax_E
+DISPOSSESS DISPOSSESS d_B ih_I s_I p_I ax_I z_I eh_I s_E
+DISSATISFACTION DISSATISFACTION d_B ih_I s_I ax_I t_I ax_I s_I f_I ae_I k_I sh_I ax_I n_E
+DO DO d_B uw_E
+DODGERS DODGERS d_B aa_I jh_I ax_I z_E
+DOWN DOWN d_B aw_I n_E
+DOWNWARD DOWNWARD d_B aw_I n_I w_I ax_I d_E
+DOWRY DOWRY d_B aw_I r_I iy_E
+DRUM DRUM d_B r_I ah_I m_E
+DUCK DUCK d_B ah_I k_E
+DURABLE DURABLE d_B uh_I r_I ax_I b_I ax_I l_E
+EACH EACH iy_B ch_E
+ECHO ECHO eh_B k_I ow_E
+EIGHT EIGHT ey_B t_E
+EMILIO EMILIO ax_B m_I iy_I l_I iy_I ow_E
+EMPLOYMENT EMPLOYMENT ax_B m_I p_I l_I oy_I m_I ax_I n_I t_E
+ENDOWMENTS ENDOWMENTS ax_B n_I d_I aw_I m_I ax_I n_I t_I s_E
+ENTER ENTER eh_B n_I t_I ax_E
+ENTERTAINER ENTERTAINER eh_B n_I t_I ax_I t_I ey_I n_I ax_E
+ENTHUSE ENTHUSE ax_B n_I th_I uw_I z_E
+EPISODE EPISODE eh_B p_I ax_I s_I ow_I d_E
+EPITHET EPITHET eh_B p_I ax_I th_I eh_I t_E
+EQUILIBRIUM EQUILIBRIUM iy_B k_I w_I ax_I l_I ih_I b_I r_I iy_I ax_I m_E
+ESCAPE ESCAPE ax_B s_I k_I ey_I p_E
+EXACTITUDE EXACTITUDE ax_B g_I z_I ae_I k_I t_I ax_I t_I uw_I d_E
+EXAGGERATE EXAGGERATE ax_B g_I z_I ae_I jh_I ax_I ey_I t_E
+EXPLOIT EXPLOIT eh_B k_I s_I p_I l_I oy_I t_E
+EYEBROWS EYEBROWS ay_B b_I r_I aw_I z_E
+FAITHFULNESS FAITHFULNESS f_B ey_I th_I f_I ax_I l_I n_I ax_I s_E
+FATHOM FATHOM f_B ae_I dh_I ax_I m_E
+FAYETTEVILLE FAYETTEVILLE f_B ey_I eh_I t_I v_I ih_I l_E
+FEATHER FEATHER f_B eh_I dh_I ax_E
+FIND FIND f_B ay_I n_I d_E
+FINGER FINGER f_B ih_I ng_I g_I ax_E
+FIRE FIRE f_B ay_I r_E
+FIRST FIRST f_B er_I s_I t_E
+FISHING FISHING f_B ih_I sh_I ax_I ng_E
+FIVE FIVE f_B ay_I v_E
+FLOWERS FLOWERS f_B l_I aw_I ax_I z_E
+FOIL FOIL f_B oy_I l_E
+FOOTMARKS FOOTMARKS f_B uh_I t_I m_I aa_I r_I k_I s_E
+FOR FOR f_B ao_I r_E
+FORGETFULNESS FORGETFULNESS f_B ax_I g_I eh_I t_I f_I ax_I l_I n_I ax_I s_E
+FOUR FOUR f_B ao_I r_E
+FOWLER FOWLER f_B aw_I l_I ax_E
+FOXTROT FOXTROT f_B aa_I k_I s_I t_I r_I aa_I t_E
+FROG FROG f_B r_I aa_I g_E
+FROM FROM f_B r_I ah_I m_E
+FRUGALITY FRUGALITY f_B r_I uw_I g_I ae_I l_I ax_I t_I iy_E
+FUTURITY FUTURITY f_B y_I uw_I ch_I ax_I r_I ax_I t_I iy_E
+GENTLEWOMAN GENTLEWOMAN jh_B eh_I n_I t_I ax_I l_I w_I uh_I m_I ax_I n_E
+GET GET g_B eh_I t_E
+GIGANTIC GIGANTIC jh_B ay_I g_I ae_I n_I t_I ax_I k_E
+GIGGLED GIGGLED g_B ih_I g_I ax_I l_I d_E
+GIRL GIRL g_B er_I l_E
+GLASSES GLASSES g_B l_I ae_I s_I ax_I z_E
+GO GO g_B ow_E
+GOLF GOLF g_B aa_I l_I f_E
+GOLF GOLF g_B ao_I l_I f_E
+GOOD GOOD g_B uh_I d_E
+GOUGED GOUGED g_B aw_I jh_I d_E
+GOULASH GOULASH g_B uw_I l_I aa_I sh_E
+GREEN GREEN g_B r_I iy_I n_E
+GREYHOUND GREYHOUND g_B r_I ey_I hh_I aw_I n_I d_E
+GUSTAVE GUSTAVE g_B uw_I s_I t_I aa_I v_E
+HA-HA HA-HA hh_B aa_I hh_I aa_E
+HAD HAD hh_B ae_I d_E
+HALLELUJAH HALLELUJAH hh_B ae_I l_I ax_I l_I uw_I y_I ax_E
+HANGER HANGER hh_B ae_I ng_I ax_E
+HARANGUING HARANGUING hh_B ax_I ae_I ng_I ax_I ng_E
+HAS HAS hh_B ae_I z_E
+HAVE HAVE hh_B ae_I v_E
+HE HE hh_B iy_E
+HER HER hh_B er_E
+HEYWARD HEYWARD hh_B ey_I w_I ax_I d_E
+HIM HIM hh_B ih_I m_E
+HIS HIS hh_B ax_I z_E
+HOIST HOIST hh_B oy_I s_I t_E
+HOMEOPATH HOMEOPATH hh_B ow_I m_I iy_I ow_I p_I ae_I th_E
+HOTEL HOTEL hh_B ow_I t_I eh_I l_E
+HOUSE HOUSE hh_B aw_I z_E
+HOW HOW hh_B aw_E
+HULK HULK hh_B ah_I l_I k_E
+HYPOTHESIS HYPOTHESIS hh_B ay_I p_I aa_I th_I ax_I s_I ax_I s_E
+I I ay_S
+IF IF ax_B f_E
+IMMOVABLE IMMOVABLE ax_B m_I uw_I v_I ax_I b_I ax_I l_E
+IN IN ih_B n_E
+INALIENABLE INALIENABLE ax_B n_I ey_I l_I y_I ax_I n_I ax_I b_I ax_I l_E
+INDIA INDIA ih_B n_I d_I iy_I ax_E
+INEXHAUSTIBLE INEXHAUSTIBLE ax_B n_I ax_I g_I z_I ao_I s_I t_I ax_I b_I ax_I l_E
+INQUIRERS INQUIRERS ax_B n_I k_I w_I ay_I r_I ax_I z_E
+INTERWOVEN INTERWOVEN ih_B n_I t_I ax_I w_I ow_I v_I ax_I n_E
+INTO INTO ax_B n_I t_I ax_E
+INTO INTO ih_B n_I t_I uw_E
+IROQUOIS IROQUOIS ih_B r_I ax_I k_I w_I oy_E
+IRRESOLUTE IRRESOLUTE ih_B r_I r_I eh_I z_I ax_I l_I uw_I t_E
+IS IS ax_B z_E
+IT IT ax_B t_E
+ITS ITS ax_B t_I s_E
+JACKDAWS JACKDAWS jh_B ae_I k_I d_I ao_I z_E
+JOSEPH JOSEPH jh_B ow_I s_I ax_I f_E
+JOURNALISM JOURNALISM jh_B er_I n_I ax_I l_I ih_I z_I ax_I m_E
+JOWLS JOWLS jh_B aw_I l_I z_E
+JOYFUL JOYFUL jh_B oy_I f_I ax_I l_E
+JUDITH JUDITH jh_B uw_I d_I ax_I th_E
+JULIET JULIET jh_B uw_I l_I iy_I eh_I t_E
+JUMPING JUMPING jh_B ah_I m_I p_I ax_I ng_E
+JURIES JURIES jh_B uh_I r_I iy_I z_E
+KILO KILO k_B ih_I l_I ow_E
+KNIFE KNIFE n_B ay_I f_E
+LAMP LAMP l_B ae_I m_I p_E
+LAWYER LAWYER l_B ao_I y_I ax_E
+LEFT LEFT l_B eh_I f_I t_E
+LEGISLATURE LEGISLATURE l_B eh_I jh_I ax_I s_I l_I ey_I ch_I ax_E
+LETHARGY LETHARGY l_B eh_I th_I ax_I jh_I iy_E
+LIKE LIKE l_B ay_I k_E
+LIMA LIMA l_B iy_I m_I ax_E
+LINE LINE l_B ay_I n_E
+LONG LONG l_B ao_I ng_E
+LOOK LOOK l_B uh_I k_E
+MADE MADE m_B ey_I d_E
+MAKE MAKE m_B ey_I k_E
+MANY MANY m_B eh_I n_I iy_E
+MASSACHUSETTS MASSACHUSETTS m_B ae_I s_I ax_I ch_I uw_I s_I ax_I t_I s_E
+MASSAGE MASSAGE m_B ax_I s_I aa_I zh_E
+MAY MAY m_B ey_E
+MERCHANDISE MERCHANDISE m_B er_I ch_I ax_I n_I d_I ay_I z_E
+MIKE MIKE m_B ay_I k_E
+MISSOURI MISSOURI m_B ax_I z_I er_I ax_E
+MOISTEN MOISTEN m_B oy_I s_I ax_I n_E
+MONKEY MONKEY m_B ah_I ng_I k_I iy_E
+MOONSHINE MOONSHINE m_B uw_I n_I sh_I ay_I n_E
+MORE MORE m_B ao_I r_E
+MORGANTOWN MORGANTOWN m_B ao_I r_I g_I ax_I n_I t_I aw_I n_E
+MOUSTACHE MOUSTACHE m_B ah_I s_I t_I ae_I sh_E
+MOUTH MOUTH m_B aw_I th_E
+MULTIFLORA MULTIFLORA m_B ah_I l_I t_I ay_I f_I l_I ow_I r_I ax_E
+MY MY m_B ay_E
+NATHANIEL NATHANIEL n_B ax_I th_I ae_I n_I y_I ax_I l_E
+NATURALIZATION NATURALIZATION n_B ae_I ch_I r_I ax_I l_I ax_I z_I ey_I sh_I ax_I n_E
+NAUSEA NAUSEA n_B ao_I z_I iy_I ax_E
+NEEDLEPOINT NEEDLEPOINT n_B iy_I d_I ax_I l_I p_I oy_I n_I t_E
+NEVERTHELESS NEVERTHELESS n_B eh_I v_I ax_I dh_I ax_I l_I eh_I s_E
+NEWFOUND NEWFOUND n_B uw_I f_I aw_I n_I d_E
+NINE NINE n_B ay_I n_E
+NO NO n_B ow_E
+NODULE NODULE n_B aa_I jh_I uw_I l_E
+NOT NOT n_B aa_I t_E
+NOVEMBER NOVEMBER n_B ow_I v_I eh_I m_I b_I ax_E
+NOW NOW n_B aw_E
+NOWHERE NOWHERE n_B ow_I w_I eh_I r_E
+NUMBER NUMBER n_B ah_I m_I b_I ax_E
+NUREMBERG NUREMBERG n_B uh_I r_I ax_I m_I b_I ax_I g_E
+OBSERVATION OBSERVATION aa_B b_I z_I ax_I v_I ey_I sh_I ax_I n_E
+OF OF ax_B v_E
+OH OH ow_S
+OIL OIL oy_B l_E
+ON ON aa_B n_E
+ONE ONE hh_B w_I ah_I n_E
+ONE ONE w_B ah_I n_E
+OR OR ao_B r_E
+ORANGE ORANGE ao_B r_I ax_I n_I jh_E
+OSCAR OSCAR ao_B s_I k_I ax_E
+OTHER OTHER ah_B dh_I ax_E
+OUT OUT aw_B t_E
+OUTPUT OUTPUT aw_B t_I p_I uh_I t_E
+OVERSHADOWED OVERSHADOWED ow_B v_I ax_I sh_I ae_I d_I ow_I d_E
+PAJAMAS PAJAMAS p_B ax_I jh_I ae_I m_I ax_I z_E
+PAPA PAPA p_B aa_I p_I ax_E
+PARAGRAPH PARAGRAPH p_B ae_I r_I ax_I g_I r_I ae_I f_E
+PARAGRAPH PARAGRAPH p_B eh_I r_I ax_I g_I r_I ae_I f_E
+PART PART p_B aa_I r_I t_E
+PASTE PASTE p_B ey_I s_I t_E
+PENCIL PENCIL p_B eh_I n_I s_I ax_I l_E
+PENNSYLVANIA PENNSYLVANIA p_B eh_I n_I s_I ax_I l_I v_I ey_I n_I y_I ax_E
+PENNYWORTH PENNYWORTH p_B eh_I n_I iy_I w_I ax_I th_E
+PEOPLE PEOPLE p_B iy_I p_I ax_I l_E
+PERPETUAL PERPETUAL p_B ax_I p_I eh_I ch_I uw_I ax_I l_E
+PLANE PLANE p_B l_I ey_I n_E
+PLOUGHSHARE PLOUGHSHARE p_B l_I aw_I sh_I eh_I r_E
+POWWOW POWWOW p_B aw_I w_I aw_E
+PRAISEWORTHY PRAISEWORTHY p_B r_I ey_I z_I w_I er_I dh_I iy_E
+PROFESSIONALS PROFESSIONALS p_B r_I ax_I f_I eh_I sh_I ax_I n_I ax_I l_I z_E
+PROMULGATE PROMULGATE p_B r_I ow_I m_I ah_I l_I g_I ey_I t_E
+PROTEGE PROTEGE p_B r_I ow_I t_I ax_I zh_I ey_E
+PSYCHOLOGICAL PSYCHOLOGICAL s_B ay_I k_I ax_I l_I aa_I jh_I ax_I k_I ax_I l_E
+PYTHON PYTHON p_B ay_I th_I ax_I n_E
+QUACK QUACK k_B w_I ae_I k_E
+QUADRUPLED QUADRUPLED k_B w_I ax_I d_I r_I uw_I p_I ax_I l_I d_E
+QUEBEC QUEBEC k_B w_I ax_I b_I eh_I k_E
+RABBIT RABBIT r_B ae_I b_I ax_I t_E
+RE-UNITED RE-UNITED r_B iy_I uw_I n_I ay_I t_I ax_I d_E
+REFUGEE REFUGEE r_B eh_I f_I y_I uw_I jh_I iy_E
+REGIME REGIME r_B ey_I zh_I iy_I m_E
+REJOINDER REJOINDER r_B iy_I jh_I oy_I n_I d_I ax_E
+RENDEZVOUS RENDEZVOUS r_B aa_I n_I d_I ax_I v_I uw_E
+RESOUND RESOUND r_B iy_I s_I aw_I n_I d_E
+REWARD REWARD r_B ax_I w_I ao_I r_I d_E
+RIGHT RIGHT r_B ay_I t_E
+RIGHTEOUS RIGHTEOUS r_B ay_I ch_I ax_I s_E
+RING RING r_B ih_I ng_E
+ROLY-POLY ROLY-POLY r_B ow_I l_I iy_I p_I ow_I l_I iy_E
+ROMEO ROMEO r_B ow_I m_I iy_I ow_E
+ROOF ROOF r_B uh_I f_E
+SAID SAID s_B eh_I d_E
+SANDPIPERS SANDPIPERS s_B ae_I n_I d_I p_I ay_I p_I ax_I z_E
+SAWYER SAWYER s_B oy_I ax_E
+SCHOOLYARD SCHOOLYARD s_B k_I uw_I l_I y_I aa_I r_I d_E
+SCISSORS SCISSORS s_B ih_I z_I ax_I z_E
+SCULLION SCULLION s_B k_I ah_I l_I y_I ax_I n_E
+SEE SEE s_B iy_E
+SENTENCE SENTENCE s_B eh_I n_I t_I ax_I n_I s_E
+SEVEN SEVEN s_B eh_I v_I ax_I n_E
+SHARPSHOOTER SHARPSHOOTER sh_B aa_I r_I p_I sh_I uw_I t_I ax_E
+SHE SHE sh_B iy_E
+SHIFT SHIFT sh_B ih_I f_I t_E
+SHOUT SHOUT sh_B aw_I t_E
+SHOVEL SHOVEL sh_B ah_I v_I ax_I l_E
+SIERRA SIERRA s_B iy_I eh_I r_I ax_E
+SILMARKER SILMARKER sil_S
+SIX SIX s_B ih_I k_I s_E
+SKYWARD SKYWARD s_B k_I ay_I w_I ax_I d_E
+SLIDE SLIDE s_B l_I ay_I d_E
+SO SO s_B ow_E
+SOME SOME s_B ah_I m_E
+SOOTHING SOOTHING s_B uw_I dh_I ax_I ng_E
+SOUTHEAST SOUTHEAST s_B aw_I th_I iy_I s_I t_E
+SOUTHEASTERLY SOUTHEASTERLY s_B aw_I th_I iy_I s_I t_I ax_I l_I iy_E
+SPOON SPOON s_B p_I uw_I n_E
+STARS STARS s_B t_I aa_I r_I z_E
+STRINGY STRINGY s_B t_I r_I ih_I ng_I iy_E
+SUGAR SUGAR sh_B uh_I g_I ax_E
+SUPERVISION SUPERVISION s_B uw_I p_I ax_I v_I ih_I zh_I ax_I n_E
+SUPREME SUPREME s_B ax_I p_I r_I iy_I m_E
+SWIMMING SWIMMING s_B w_I ih_I m_I ax_I ng_E
+SWOON SWOON s_B w_I uw_I n_E
+SYMPATHIZE SYMPATHIZE s_B ih_I m_I p_I ax_I th_I ay_I z_E
+TAB TAB t_B ae_I b_E
+TANGO TANGO t_B ae_I ng_I g_I ow_E
+TELEPHONE TELEPHONE t_B eh_I l_I ax_I f_I ow_I n_E
+THAN THAN dh_B ae_I n_E
+THAT THAT dh_B ae_I t_E
+THAT THAT dh_B ax_I t_E
+THE THE dh_B ah_E
+THEIR THEIR dh_B eh_I r_E
+THEM THEM dh_B eh_I m_E
+THEN THEN dh_B eh_I n_E
+THERE THERE dh_B eh_I r_E
+THESE THESE dh_B iy_I z_E
+THEY THEY dh_B ey_E
+THINE THINE dh_B ay_I n_E
+THIRTY-FIVE THIRTY-FIVE th_B er_I d_I iy_I f_I ay_I v_E
+THIS THIS dh_B ax_I s_E
+THOU THOU dh_B aw_E
+THREE THREE th_B r_I iy_E
+THUMB THUMB th_B ah_I m_E
+TIME TIME t_B ay_I m_E
+TO TO t_B uw_E
+TOIL TOIL t_B oy_I l_E
+TOOTHACHE TOOTHACHE t_B uw_I th_I ey_I k_E
+TREE TREE t_B r_I iy_E
+TWO TWO t_B uw_E
+UNIFORM UNIFORM y_B uw_I n_I ax_I f_I ao_I r_I m_E
+UNUSUAL UNUSUAL ax_B n_I y_I uw_I zh_I uw_I ax_I l_E
+UNYIELDING UNYIELDING ax_B n_I y_I iy_I l_I d_I ax_I ng_E
+UP UP ah_B p_E
+UPWARD UPWARD ah_B p_I w_I ax_I d_E
+USE USE y_B uw_I z_E
+VACUUM VACUUM v_B ae_I k_I y_I uw_I m_E
+VICTOR VICTOR v_B ih_I k_I t_I ax_E
+VOUCHSAFE VOUCHSAFE v_B aw_I ch_I s_I ey_I f_E
+VOYAGE VOYAGE v_B oy_I ax_I jh_E
+WAGON WAGON w_B ae_I g_I ax_I n_E
+WAS WAS w_B aa_I z_E
+WAS WAS w_B ao_I z_E
+WAS WAS w_B ax_I z_E
+WASHERWOMAN WASHERWOMAN w_B aa_I sh_I ax_I w_I uh_I m_I ax_I n_E
+WATCH WATCH w_B aa_I ch_E
+WATCHES WATCHES w_B aa_I ch_I ax_I z_E
+WATER WATER w_B ao_I t_I ax_E
+WAY WAY w_B ey_E
+WE WE w_B iy_E
+WERE WERE w_B er_E
+WHAT WHAT w_B aa_I t_E
+WHAT WHAT w_B ah_I t_E
+WHEN WHEN hh_B w_I eh_I n_E
+WHEN WHEN w_B eh_I n_E
+WHEREWITHAL WHEREWITHAL w_B eh_I r_I w_I ax_I dh_I ao_I l_E
+WHICH WHICH hh_B w_I ih_I ch_E
+WHICH WHICH w_B ih_I ch_E
+WHISKEY WHISKEY hh_B w_I ih_I s_I k_I iy_E
+WHISKEY WHISKEY w_B ih_I s_I k_I iy_E
+WHO WHO hh_B uw_E
+WILL WILL w_B ax_I l_E
+WINDOW WINDOW w_B ih_I n_I d_I ow_E
+WITH WITH w_B ax_I th_E
+WITHOUT WITHOUT w_B ax_I dh_I aw_I t_E
+WORD WORD w_B er_I d_E
+WOULD WOULD w_B uh_I d_E
+WRITE WRITE r_B ay_I t_E
+X-RAY X-RAY eh_B k_I s_I r_I ey_E
+YALE YALE y_B ey_I l_E
+YANKEE YANKEE y_B ae_I ng_I k_I iy_E
+YELLOW YELLOW y_B eh_I l_I ow_E
+YES YES y_B eh_I s_E
+YOU YOU y_B uw_E
+YOUR YOUR y_B ao_I r_E
+ZERO ZERO z_B ih_I r_I ow_E
+ZIPPER ZIPPER z_B ih_I p_I ax_E
+ZULU ZULU z_B uw_I l_I uw_E

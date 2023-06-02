@@ -1,0 +1,9 @@
+# nnet-am-init exp_dys_comb_vad/tri3_ali/tree data_dys_comb_vad/lang_uas/topo "nnet-init exp_dys_comb_vad/DNN/nnet.config -|" exp_dys_comb_vad/DNN/0.mdl 
+# Started at Fri Mar 17 00:24:11 IST 2023
+#
+nnet-am-init exp_dys_comb_vad/tri3_ali/tree data_dys_comb_vad/lang_uas/topo 'nnet-init exp_dys_comb_vad/DNN/nnet.config -|' exp_dys_comb_vad/DNN/0.mdl 
+nnet-init exp_dys_comb_vad/DNN/nnet.config - 
+LOG (nnet-init[5.5]:main():nnet-init.cc:69) Initialized raw neural net and wrote it to -
+LOG (nnet-am-init[5.5]:main():nnet-am-init.cc:102) Initialized neural net and wrote it to exp_dys_comb_vad/DNN/0.mdl
+# Accounting: time=2 threads=1
+# Ended (code 0) at Fri Mar 17 00:24:13 IST 2023, elapsed time 2 seconds

@@ -1,0 +1,7 @@
+# sum-tree-stats exp_dys_comb_vad/tri2/treeacc exp_dys_comb_vad/tri2/1.treeacc exp_dys_comb_vad/tri2/10.treeacc exp_dys_comb_vad/tri2/11.treeacc exp_dys_comb_vad/tri2/2.treeacc exp_dys_comb_vad/tri2/3.treeacc exp_dys_comb_vad/tri2/4.treeacc exp_dys_comb_vad/tri2/5.treeacc exp_dys_comb_vad/tri2/6.treeacc exp_dys_comb_vad/tri2/7.treeacc exp_dys_comb_vad/tri2/8.treeacc exp_dys_comb_vad/tri2/9.treeacc 
+# Started at Thu Mar 16 23:57:49 IST 2023
+#
+sum-tree-stats exp_dys_comb_vad/tri2/treeacc exp_dys_comb_vad/tri2/1.treeacc exp_dys_comb_vad/tri2/10.treeacc exp_dys_comb_vad/tri2/11.treeacc exp_dys_comb_vad/tri2/2.treeacc exp_dys_comb_vad/tri2/3.treeacc exp_dys_comb_vad/tri2/4.treeacc exp_dys_comb_vad/tri2/5.treeacc exp_dys_comb_vad/tri2/6.treeacc exp_dys_comb_vad/tri2/7.treeacc exp_dys_comb_vad/tri2/8.treeacc exp_dys_comb_vad/tri2/9.treeacc 
+LOG (sum-tree-stats[5.5]:main():sum-tree-stats.cc:88) Wrote summed accs ( 6017 individual stats)
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Mar 16 23:57:49 IST 2023, elapsed time 0 seconds

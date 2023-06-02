@@ -1,0 +1,5 @@
+gmm-init-model --write-occs=exp_dys_comb_vad/tri3/1.occs exp_dys_comb_vad/tri3/tree exp_dys_comb_vad/tri3/treeacc data_dys_comb_vad/lang_uas/topo exp_dys_comb_vad/tri3/1.mdl 
+LOG (gmm-init-model[5.5]:main():gmm-init-model.cc:271) Number of separate statistics is 6176
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+WARNING (gmm-init-model[5.5]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 33 with no stats; corresponding phone list: 135 136 137 138 
+LOG (gmm-init-model[5.5]:main():gmm-init-model.cc:306) Wrote model.

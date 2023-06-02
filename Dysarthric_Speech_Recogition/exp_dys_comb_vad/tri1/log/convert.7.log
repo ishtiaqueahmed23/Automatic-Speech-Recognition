@@ -1,0 +1,7 @@
+# convert-ali exp_dys_comb_vad/mono_ali/final.mdl exp_dys_comb_vad/tri1/1.mdl exp_dys_comb_vad/tri1/tree "ark:gunzip -c exp_dys_comb_vad/mono_ali/ali.7.gz|" "ark:|gzip -c >exp_dys_comb_vad/tri1/ali.7.gz" 
+# Started at Thu Mar 16 23:46:16 IST 2023
+#
+convert-ali exp_dys_comb_vad/mono_ali/final.mdl exp_dys_comb_vad/tri1/1.mdl exp_dys_comb_vad/tri1/tree 'ark:gunzip -c exp_dys_comb_vad/mono_ali/ali.7.gz|' 'ark:|gzip -c >exp_dys_comb_vad/tri1/ali.7.gz' 
+LOG (convert-ali[5.5]:main():convert-ali.cc:120) Succeeded converting alignments for 6829 files, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Mar 16 23:46:17 IST 2023, elapsed time 1 seconds
